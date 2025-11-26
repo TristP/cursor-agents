@@ -173,6 +173,33 @@
       background-color: #1e40af;
     }
 
+    .veef-nav__login {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: transparent;
+      color: #1E3A8A;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      border-radius: 6px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #1E3A8A;
+      margin-left: 8px;
+      transition-property: background-color, color;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+    }
+
+    .veef-nav__login:hover {
+      background-color: #1E3A8A;
+      color: #ffffff;
+    }
+
     .veef-nav__dropdown {
       position: relative;
     }
@@ -352,6 +379,26 @@
       font-size: 1rem;
       font-weight: 600;
       border-radius: 6px;
+    }
+
+    .veef-mobile-menu__login {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      padding-left: 24px;
+      padding-right: 24px;
+      margin-top: 12px;
+      background-color: transparent;
+      color: #1E3A8A;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 6px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #1E3A8A;
     }
 
     /* Page Hero */
@@ -1144,6 +1191,7 @@
               <li class="veef-nav__item"><a href="blog/index.html" class="veef-nav__link">Blog</a></li>
               <li class="veef-nav__item"><a href="faq.html" class="veef-nav__link">FAQ</a></li>
               <li class="veef-nav__item"><a href="contact.html" class="veef-nav__cta">Contact us</a></li>
+              <li class="veef-nav__item"><a href="#" class="veef-nav__login">Login</a></li>
             </ul>
           </nav>
 
@@ -1162,7 +1210,8 @@
             <li class="veef-mobile-menu__item"><a href="faq.html" class="veef-mobile-menu__link">FAQ</a></li>
             <li class="veef-mobile-menu__item"><a href="blog/index.html" class="veef-mobile-menu__link">Blog</a></li>
           </ul>
-          <a href="contact.html" class="veef-mobile-menu__cta">Partner with us</a>
+          <a href="contact.html" class="veef-mobile-menu__cta">Contact us</a>
+          <a href="#" class="veef-mobile-menu__login">Login</a>
         </nav>
       </div>
     </header>
