@@ -1,0 +1,55 @@
+{
+  "name": "vat-epr-expert-france-site",
+  "version": "1.0.0",
+  "description": "Marketing website for VAT EPR EXPERT FRANCE - French VAT and EPR representation services for cross-border e-commerce sellers and partners",
+  "main": "index.js",
+  "scripts": {
+    "dev": "htflow serve dev",
+    "serve": "htflow serve",
+    "build": "htflow build",
+    "audit": "htflow audit",
+    "htflow:dev": "htflow serve dev",
+    "htflow:build": "htflow build",
+    "htflow:audit": "htflow audit",
+    "htflow:init": "htflow init"
+  },
+  "keywords": [
+    "vat",
+    "epr",
+    "france",
+    "tax",
+    "compliance",
+    "e-commerce",
+    "fiscal-representation"
+  ],
+  "author": "Tristan Perot",
+  "license": "UNLICENSED",
+  "htflow": {
+    "version": "1.9.4",
+    "rules": {
+      "html": {
+        "semanticElements": true,
+        "accessibility": true,
+        "webflowCompatible": true
+      },
+      "css": {
+        "vanillaOnly": true,
+        "noFrameworks": true,
+        "responsiveBreakpoints": [
+          991,
+          767,
+          479
+        ]
+      },
+      "javascript": {
+        "vanillaOnly": true,
+        "noFrameworks": true,
+        "modernES6": true
+      }
+    },
+    "project": {
+      "type": "htflow",
+      "webflowCompatible": true
+    }
+  }
+}

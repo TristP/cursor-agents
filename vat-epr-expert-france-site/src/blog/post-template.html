@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>France VAT for non-EU e-commerce sellers: where to start - VAT EPR EXPERT FRANCE</title>
+  <meta name="description" content="An overview of French VAT obligations for non-EU sellers shipping goods to French customers, including registration requirements and key considerations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style data-ht-styles>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin-top: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-left: 0;
+      padding-top: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+      padding-left: 0;
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #111827;
+      background-color: #ffffff;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ul, ol {
+      list-style: none;
+    }
+
+    .veef-container {
+      width: 100%;
+      max-width: 1280px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    /* Header */
+    .veef-header {
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: #ffffff;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-bottom-color: #E5E7EB;
+    }
+
+    .veef-header__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    .veef-logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: #1E3A8A;
+      letter-spacing: -0.025em;
+    }
+
+    .veef-logo__icon {
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+    }
+
+    .veef-nav {
+      display: flex;
+      align-items: center;
+    }
+
+    .veef-nav__list {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .veef-nav__item {
+      display: flex;
+      align-items: center;
+    }
+
+    .veef-nav__link {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: #374151;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 16px;
+      padding-right: 16px;
+      border-radius: 6px;
+      transition-property: color, background-color;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+    }
+
+    .veef-nav__link:hover {
+      color: #1E3A8A;
+      background-color: #F3F4F6;
+    }
+
+    .veef-nav__link--active {
+      color: #1E3A8A;
+    }
+
+    .veef-nav__cta-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 16px;
+      padding-right: 16px;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: #374151;
+      background-color: transparent;
+      border-radius: 6px;
+      transition-property: color, background-color;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+    }
+
+    .veef-nav__cta-secondary:hover {
+      color: #1E3A8A;
+      background-color: #F3F4F6;
+    }
+
+    .veef-nav__cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: #1E3A8A;
+      color: #ffffff;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      border-radius: 6px;
+      margin-left: 8px;
+    }
+
+    .veef-nav__dropdown {
+      position: relative;
+    }
+
+    .veef-nav__dropdown-trigger {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: #374151;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 16px;
+      padding-right: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition-property: color, background-color;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+    }
+
+    .veef-nav__dropdown-trigger:hover {
+      color: #1E3A8A;
+      background-color: #F3F4F6;
+    }
+
+    .veef-nav__dropdown-icon {
+      width: 12px;
+      height: 12px;
+      transition-property: transform;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+    }
+
+    .veef-nav__dropdown:hover .veef-nav__dropdown-icon {
+      transform: rotate(180deg);
+    }
+
+    .veef-nav__dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 220px;
+      background-color: #ffffff;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #E5E7EB;
+      border-radius: 8px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+      padding-top: 8px;
+      padding-bottom: 8px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(8px);
+      transition-property: opacity, visibility, transform;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+      z-index: 100;
+    }
+
+    .veef-nav__dropdown:hover .veef-nav__dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .veef-nav__dropdown-item {
+      display: block;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 16px;
+      padding-right: 16px;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: #374151;
+      transition-property: color, background-color;
+      transition-duration: 0.15s;
+      transition-timing-function: ease;
+    }
+
+    .veef-nav__dropdown-item:hover {
+      color: #1E3A8A;
+      background-color: #F3F4F6;
+    }
+
+    .veef-nav__dropdown-desc {
+      display: block;
+      font-size: 0.8125rem;
+      font-weight: 400;
+      color: #6B7280;
+      margin-top: 2px;
+    }
+
+    .veef-nav__dropdown-badge {
+      display: inline-block;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      color: #F59E0B;
+      background-color: #FEF3C7;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      padding-left: 6px;
+      padding-right: 6px;
+      border-radius: 4px;
+      margin-left: 8px;
+    }
+
+    .veef-mobile-toggle {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
+      border-width: 0;
+      border-style: none;
+      cursor: pointer;
+    }
+
+    .veef-mobile-toggle__bar {
+      width: 24px;
+      height: 2px;
+      background-color: #111827;
+      margin-top: 3px;
+      margin-bottom: 3px;
+      border-radius: 2px;
+    }
+
+    .veef-mobile-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: #ffffff;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-bottom-color: #E5E7EB;
+      padding-top: 16px;
+      padding-bottom: 24px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    .veef-mobile-menu.is-open {
+      display: block;
+    }
+
+    .veef-mobile-menu__list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .veef-mobile-menu__link {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #374151;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+
+    .veef-mobile-menu__cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      padding-left: 24px;
+      padding-right: 24px;
+      margin-top: 16px;
+      background-color: #1E3A8A;
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 6px;
+    }
+
+    /* Article Header */
+    .veef-article-header {
+      background-color: #F9FAFB;
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+
+    .veef-article-header__content {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .veef-article-header__breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.875rem;
+      color: #6B7280;
+      margin-bottom: 24px;
+    }
+
+    .veef-article-header__breadcrumb-link {
+      color: #1E3A8A;
+    }
+
+    .veef-article-header__breadcrumb-separator {
+      width: 16px;
+      height: 16px;
+    }
+
+    .veef-article-header__meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .veef-article-header__category {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #1E3A8A;
+      background-color: #EFF6FF;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      padding-left: 12px;
+      padding-right: 12px;
+      border-radius: 4px;
+    }
+
+    .veef-article-header__date {
+      font-size: 0.875rem;
+      color: #6B7280;
+    }
+
+    .veef-article-header__title {
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: #111827;
+      line-height: 1.25;
+      margin-bottom: 20px;
+      letter-spacing: -0.025em;
+    }
+
+    .veef-article-header__excerpt {
+      font-size: 1.125rem;
+      color: #4B5563;
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+
+    .veef-article-header__author {
+      display: flex;
+      align-items: center;
+    }
+
+    .veef-article-header__author-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: #1E3A8A;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 12px;
+    }
+
+    .veef-article-header__author-icon {
+      width: 24px;
+      height: 24px;
+      color: #ffffff;
+    }
+
+    .veef-article-header__author-name {
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: #111827;
+    }
+
+    .veef-article-header__author-role {
+      font-size: 0.8125rem;
+      color: #6B7280;
+    }
+
+    /* Article Content */
+    .veef-article {
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+
+    .veef-article__content {
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .veef-article__text {
+      font-size: 1.0625rem;
+      color: #374151;
+      line-height: 1.8;
+      margin-bottom: 24px;
+    }
+
+    .veef-article__heading {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #111827;
+      margin-top: 48px;
+      margin-bottom: 20px;
+      letter-spacing: -0.025em;
+    }
+
+    .veef-article__subheading {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #111827;
+      margin-top: 36px;
+      margin-bottom: 16px;
+    }
+
+    .veef-article__list {
+      margin-bottom: 24px;
+      padding-left: 24px;
+    }
+
+    .veef-article__list-item {
+      font-size: 1.0625rem;
+      color: #374151;
+      line-height: 1.7;
+      margin-bottom: 12px;
+      position: relative;
+    }
+
+    .veef-article__list-item::before {
+      content: "";
+      position: absolute;
+      left: -24px;
+      top: 10px;
+      width: 6px;
+      height: 6px;
+      background-color: #1E3A8A;
+      border-radius: 50%;
+    }
+
+    .veef-article__callout {
+      background-color: #EFF6FF;
+      border-left-width: 4px;
+      border-left-style: solid;
+      border-left-color: #1E3A8A;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 24px;
+      padding-right: 24px;
+      margin-top: 32px;
+      margin-bottom: 32px;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .veef-article__callout-text {
+      font-size: 1rem;
+      color: #1E3A8A;
+      line-height: 1.7;
+      font-weight: 500;
+    }
+
+    .veef-article__link {
+      color: #1E3A8A;
+      font-weight: 500;
+      text-decoration: underline;
+    }
+
+    /* CTA Section */
+    .veef-cta-section {
+      background-color: #1E3A8A;
+      padding-top: 64px;
+      padding-bottom: 64px;
+      text-align: center;
+    }
+
+    .veef-cta-section__content {
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .veef-cta-section__title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
+
+    .veef-cta-section__text {
+      font-size: 1.0625rem;
+      color: #BFDBFE;
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+
+    .veef-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      padding-left: 28px;
+      padding-right: 28px;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      border-width: 0;
+      border-style: none;
+    }
+
+    .veef-button--white {
+      background-color: #ffffff;
+      color: #1E3A8A;
+    }
+
+    .veef-button__icon {
+      width: 20px;
+      height: 20px;
+      margin-left: 8px;
+    }
+
+    /* Related Posts */
+    .veef-related {
+      padding-top: 64px;
+      padding-bottom: 64px;
+      background-color: #F9FAFB;
+    }
+
+    .veef-related__title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .veef-related__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      gap: 24px;
+    }
+
+    .veef-related-card {
+      background-color: #ffffff;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #E5E7EB;
+      border-radius: 12px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    .veef-related-card__category {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #1E3A8A;
+      margin-bottom: 12px;
+    }
+
+    .veef-related-card__title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #111827;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .veef-related-card__link {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #1E3A8A;
+    }
+
+    .veef-related-card__arrow {
+      width: 14px;
+      height: 14px;
+      margin-left: 4px;
+    }
+
+    /* Footer */
+    .veef-footer {
+      background-color: #111827;
+      color: #ffffff;
+      padding-top: 64px;
+      padding-bottom: 24px;
+    }
+
+    .veef-footer__main {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      gap: 40px;
+      margin-bottom: 16px;
+    }
+
+    .veef-footer__brand {
+      max-width: 380px;
+    }
+
+    .veef-footer__top {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .veef-footer__logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
+
+    .veef-footer__logo-icon {
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+    }
+
+    .veef-footer__desc {
+      font-size: 0.9375rem;
+      color: #9CA3AF;
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+
+    .veef-footer__newsletter {
+      max-width: 400px;
+    }
+
+    .veef-footer__newsletter-desc {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 16px;
+      line-height: 1.6;
+    }
+
+    .veef-footer__newsletter-form {
+      display: flex;
+      gap: 12px;
+    }
+
+    .veef-footer__newsletter-input {
+      flex-grow: 1;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 16px;
+      padding-right: 16px;
+      background-color: #1F2937;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #374151;
+      border-radius: 8px;
+      color: #ffffff;
+      font-size: 0.9375rem;
+      font-family: inherit;
+      outline: none;
+      transition-property: border-color;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+    }
+
+    .veef-footer__newsletter-input:focus {
+      border-color: #1E3A8A;
+    }
+
+    .veef-footer__newsletter-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: #1E3A8A;
+      color: #ffffff;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      font-family: inherit;
+      border-width: 0;
+      border-style: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition-property: background-color;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+    }
+
+    .veef-footer__newsletter-btn:hover {
+      background-color: #1e40af;
+    }
+
+    .veef-footer__newsletter-note {
+      font-size: 0.75rem;
+      color: #6B7280;
+      margin-top: 12px;
+    }
+
+    .veef-footer__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      gap: 24px;
+    }
+
+    .veef-footer__column {
+      min-width: 0;
+    }
+
+    .veef-footer__title {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
+
+    .veef-footer__list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .veef-footer__link {
+      font-size: 0.9375rem;
+      color: #D1D5DB;
+      transition-property: color;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+    }
+
+    .veef-footer__link:hover {
+      color: #ffffff;
+    }
+
+    .veef-footer__bottom {
+      padding-top: 8px;
+    }
+
+    .veef-footer__copyright {
+      font-size: 0.875rem;
+      color: #6B7280;
+      text-align: left;
+    }
+
+    /* Back to Top Button */
+    .veef-back-to-top {
+      position: fixed;
+      bottom: 32px;
+      right: 32px;
+      width: 48px;
+      height: 48px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition-property: opacity, visibility, transform, background-color;
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
+      z-index: 999;
+      border-width: 0;
+      border-style: none;
+    }
+
+    .veef-back-to-top.is-visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .veef-back-to-top:hover {
+      background-color: #1E3A8A;
+    }
+
+    .veef-back-to-top:hover .veef-back-to-top__icon {
+      stroke: #ffffff;
+    }
+
+    .veef-back-to-top__icon {
+      width: 20px;
+      height: 20px;
+      stroke: #1E3A8A;
+      stroke-width: 2.5;
+      transition-property: stroke;
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
+    }
+
+    .veef-footer__lang {
+      display: flex;
+      gap: 12px;
+    }
+
+    .veef-footer__lang-link {
+      font-size: 0.875rem;
+      color: #9CA3AF;
+    }
+
+    .veef-footer__lang-link--active {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .veef-footer__social {
+      display: flex;
+      gap: 16px;
+    }
+
+    .veef-footer__social-link {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #374151;
+      border-radius: 8px;
+      color: #9CA3AF;
+    }
+
+    .veef-footer__social-icon {
+      width: 20px;
+      height: 20px;
+    }
+
+    /* Responsive */
+    @media (max-width: 991px) {
+      .veef-nav {
+        display: none;
+      }
+
+      .veef-mobile-toggle {
+        display: flex;
+      }
+
+      .veef-related__grid {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      .veef-footer__main {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 48px;
+      }
+
+      .veef-footer__brand {
+        flex-shrink: 0;
+        max-width: 380px;
+      }
+
+      .veef-footer__grid {
+        flex-grow: 1;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        gap: 20px;
+      }
+
+      .veef-footer__newsletter-form {
+        flex-direction: row;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .veef-footer__main {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      .veef-footer__brand {
+        flex-shrink: 0;
+        max-width: 380px;
+      }
+
+      .veef-footer__grid {
+        flex-shrink: 0;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        gap: 72px;
+        margin-left: auto;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .veef-article-header {
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+
+      .veef-article-header__title {
+        font-size: 2.75rem;
+      }
+
+      .veef-article {
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .veef-container {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .veef-article-header {
+        padding-top: 48px;
+        padding-bottom: 48px;
+      }
+
+      .veef-article-header__title {
+        font-size: 1.75rem;
+      }
+
+      .veef-article {
+        padding-top: 48px;
+        padding-bottom: 48px;
+      }
+
+      .veef-article__heading {
+        font-size: 1.375rem;
+      }
+
+      .veef-footer__grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 479px) {
+      .veef-article-header__title {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="htflow-wrapper">
+    <!-- Header -->
+    <header class="veef-header" data-ht-header>
+      <div class="veef-container">
+        <div class="veef-header__inner">
+          <a href="../index.html" class="veef-logo">
+            <svg class="veef-logo__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="32" height="32" rx="6" fill="#1E3A8A"/>
+              <path d="M8 10L12 22L16 14L20 22L24 10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="veef-logo__text">VAT EPR EXPERT FRANCE</span>
+          </a>
+          
+          <nav class="veef-nav" data-ht-nav>
+            <ul class="veef-nav__list">
+              <li class="veef-nav__item"><a href="../vat-representation.html" class="veef-nav__link">VAT Representation</a></li>
+              <li class="veef-nav__item"><a href="../epr-representation.html" class="veef-nav__link">EPR Representation</a></li>
+              <li class="veef-nav__item veef-nav__dropdown">
+                <span class="veef-nav__dropdown-trigger">
+                  Tools
+                  <svg class="veef-nav__dropdown-icon" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 4.5l3 3 3-3"/>
+                  </svg>
+                </span>
+                <div class="veef-nav__dropdown-menu">
+                  <a href="#" class="veef-nav__dropdown-item">
+                    VAT Checker
+                    <span class="veef-nav__dropdown-badge">Coming soon</span>
+                    <span class="veef-nav__dropdown-desc">Verify VAT numbers instantly</span>
+                  </a>
+                  <a href="#" class="veef-nav__dropdown-item">
+                    UIN Checker
+                    <span class="veef-nav__dropdown-badge">Coming soon</span>
+                    <span class="veef-nav__dropdown-desc">Look up EPR identification numbers</span>
+                  </a>
+                </div>
+              </li>
+              <li class="veef-nav__item"><a href="index.html" class="veef-nav__link veef-nav__link--active">Blog</a></li>
+              <li class="veef-nav__item"><a href="../faq.html" class="veef-nav__link">FAQ</a></li>
+              <li class="veef-nav__item"><a href="../contact.html" class="veef-nav__cta">Contact us</a></li>
+            </ul>
+          </nav>
+
+          <button class="veef-mobile-toggle" data-ht-mobile-toggle aria-label="Toggle menu" aria-expanded="false">
+            <span class="veef-mobile-toggle__bar"></span>
+            <span class="veef-mobile-toggle__bar"></span>
+            <span class="veef-mobile-toggle__bar"></span>
+          </button>
+        </div>
+
+        <nav class="veef-mobile-menu" data-ht-mobile-menu>
+          <ul class="veef-mobile-menu__list">
+            <li class="veef-mobile-menu__item"><a href="../index.html" class="veef-mobile-menu__link">Home</a></li>
+            <li class="veef-mobile-menu__item"><a href="../vat-representation.html" class="veef-mobile-menu__link">VAT Representation</a></li>
+            <li class="veef-mobile-menu__item"><a href="../epr-representation.html" class="veef-mobile-menu__link">EPR Representation</a></li>
+            <li class="veef-mobile-menu__item"><a href="../faq.html" class="veef-mobile-menu__link">FAQ</a></li>
+            <li class="veef-mobile-menu__item"><a href="index.html" class="veef-mobile-menu__link">Blog</a></li>
+          </ul>
+          <a href="../contact.html" class="veef-mobile-menu__cta">Partner with us</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="veef-main">
+      <!-- Article Header -->
+      <header class="veef-article-header">
+        <div class="veef-container">
+          <div class="veef-article-header__content">
+            <nav class="veef-article-header__breadcrumb" aria-label="Breadcrumb">
+              <a href="../index.html" class="veef-article-header__breadcrumb-link">Home</a>
+              <svg class="veef-article-header__breadcrumb-separator" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18l6-6-6-6"/>
+              </svg>
+              <a href="index.html" class="veef-article-header__breadcrumb-link">Blog</a>
+              <svg class="veef-article-header__breadcrumb-separator" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18l6-6-6-6"/>
+              </svg>
+              <span class="veef-article-header__breadcrumb-current">Article</span>
+            </nav>
+
+            <div class="veef-article-header__meta">
+              <span class="veef-article-header__category">VAT</span>
+              <time class="veef-article-header__date" datetime="2025-01-15">January 15, 2025</time>
+            </div>
+
+            <h1 class="veef-article-header__title">France VAT for non-EU e-commerce sellers: where to start</h1>
+            
+            <p class="veef-article-header__excerpt">An overview of French VAT obligations for non-EU sellers shipping goods to French customers, including registration requirements and key considerations.</p>
+
+            <div class="veef-article-header__author">
+              <div class="veef-article-header__author-avatar">
+                <svg class="veef-article-header__author-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="8" r="4"/>
+                  <path d="M4 20c0-4.418 3.582-8 8-8s8 3.582 8 8"/>
+                </svg>
+              </div>
+              <div class="veef-article-header__author-info">
+                <p class="veef-article-header__author-name">Tristan Perot</p>
+                <p class="veef-article-header__author-role">Founder, VAT EPR EXPERT FRANCE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Article Content -->
+      <!-- NOTE: This content structure is designed to map to Webflow CMS Rich Text fields -->
+      <article class="veef-article">
+        <div class="veef-container">
+          <div class="veef-article__content">
+            <p class="veef-article__text">If you are a non-EU business selling goods to customers in France, understanding your French VAT obligations is essential. This guide provides an overview of when registration is required and what steps you should take to ensure compliance.</p>
+
+            <h2 class="veef-article__heading">When do non-EU sellers need to register for French VAT?</h2>
+
+            <p class="veef-article__text">Non-EU sellers may trigger French VAT registration requirements in several scenarios. The most common situations include:</p>
+
+            <ul class="veef-article__list">
+              <li class="veef-article__list-item">Storing goods in France (for example, using a French fulfilment centre)</li>
+              <li class="veef-article__list-item">Selling goods directly to French consumers when the goods are shipped from within the EU</li>
+              <li class="veef-article__list-item">Importing goods into France for distribution</li>
+              <li class="veef-article__list-item">Meeting certain distance selling thresholds when selling across EU borders</li>
+            </ul>
+
+            <p class="veef-article__text">The specific rules depend on your business model, where your goods are located, and how they are shipped to French customers. If you are unsure whether you need to register, we recommend seeking professional advice tailored to your situation.</p>
+
+            <h2 class="veef-article__heading">The role of a fiscal representative</h2>
+
+            <p class="veef-article__text">When a non-EU business registers for VAT in France, it is generally required to appoint a fiscal representative. This representative takes on joint liability for the VAT obligations and acts as the official point of contact with the French tax authorities.</p>
+
+            <div class="veef-article__callout">
+              <p class="veef-article__callout-text">A fiscal representative is different from a tax agent. The key distinction is liability: a fiscal representative shares responsibility for VAT compliance, while a tax agent simply acts on behalf of the business without assuming liability.</p>
+            </div>
+
+            <p class="veef-article__text">Choosing the right fiscal representative is important. You want a partner who understands e-commerce, can handle the specific requirements of your business, and provides clear communication throughout the process.</p>
+
+            <h2 class="veef-article__heading">Key steps in the registration process</h2>
+
+            <p class="veef-article__text">The French VAT registration process involves several key steps:</p>
+
+            <h3 class="veef-article__subheading">1. Gather required documentation</h3>
+
+            <p class="veef-article__text">You will need to provide company registration documents, identification for directors, details of your business activities, and information about your expected sales in France.</p>
+
+            <h3 class="veef-article__subheading">2. Appoint a fiscal representative</h3>
+
+            <p class="veef-article__text">Work with your chosen representative to complete the necessary appointment documentation and power of attorney.</p>
+
+            <h3 class="veef-article__subheading">3. Submit the registration application</h3>
+
+            <p class="veef-article__text">Your representative will submit the application to the appropriate tax office and follow up on progress.</p>
+
+            <h3 class="veef-article__subheading">4. Receive your VAT number</h3>
+
+            <p class="veef-article__text">Once approved, you will receive your French VAT number and can begin fulfilling your obligations.</p>
+
+            <h2 class="veef-article__heading">Ongoing compliance</h2>
+
+            <p class="veef-article__text">Registration is just the beginning. Once registered, you will need to:</p>
+
+            <ul class="veef-article__list">
+              <li class="veef-article__list-item">File periodic VAT returns (typically monthly in France)</li>
+              <li class="veef-article__list-item">Pay VAT owed to the tax authorities</li>
+              <li class="veef-article__list-item">Maintain proper records of your transactions</li>
+              <li class="veef-article__list-item">Respond to any queries from the tax office</li>
+            </ul>
+
+            <p class="veef-article__text">Working with an experienced partner can help ensure these obligations are met accurately and on time.</p>
+
+            <h2 class="veef-article__heading">Next steps</h2>
+
+            <p class="veef-article__text">If you are a non-EU seller considering expansion into France, or if you are already selling to French customers and need to formalise your VAT compliance, we are here to help. <a href="../contact.html" class="veef-article__link">Contact us</a> to discuss your specific situation and how we can support your French VAT registration and ongoing compliance.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- CTA Section -->
+      <section class="veef-cta-section">
+        <div class="veef-container">
+          <div class="veef-cta-section__content">
+            <h2 class="veef-cta-section__title">Need help with French VAT?</h2>
+            <p class="veef-cta-section__text">We provide fiscal representation and ongoing VAT compliance support for non-EU e-commerce sellers. Let's discuss your needs.</p>
+            <a href="../contact.html" class="veef-button veef-button--white">
+              <span class="veef-button__text">Contact us</span>
+              <svg class="veef-button__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Posts -->
+      <section class="veef-related">
+        <div class="veef-container">
+          <h2 class="veef-related__title">Related articles</h2>
+          <div class="veef-related__grid">
+            <article class="veef-related-card">
+              <span class="veef-related-card__category">VAT</span>
+              <h3 class="veef-related-card__title">Fiscal representative vs tax agent: what is the difference?</h3>
+              <a href="post-template.html" class="veef-related-card__link">
+                <span class="veef-related-card__link-text">Read article</span>
+                <svg class="veef-related-card__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </article>
+
+            <article class="veef-related-card">
+              <span class="veef-related-card__category">EPR</span>
+              <h3 class="veef-related-card__title">Understanding French EPR obligations for online sellers</h3>
+              <a href="post-template.html" class="veef-related-card__link">
+                <span class="veef-related-card__link-text">Read article</span>
+                <svg class="veef-related-card__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </article>
+
+            <article class="veef-related-card">
+              <span class="veef-related-card__category">Partners</span>
+              <h3 class="veef-related-card__title">How partners can centralise French VAT &amp; EPR for clients</h3>
+              <a href="post-template.html" class="veef-related-card__link">
+                <span class="veef-related-card__link-text">Read article</span>
+                <svg class="veef-related-card__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="veef-footer">
+      <div class="veef-container">
+        <div class="veef-footer__main">
+          <div class="veef-footer__brand">
+            <a href="../index.html" class="veef-footer__logo">
+              <svg class="veef-footer__logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="32" height="32" rx="6" fill="#1E3A8A"/>
+                <path d="M8 10L12 22L16 14L20 22L24 10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="veef-footer__logo-text">VAT EPR EXPERT FRANCE</span>
+            </a>
+            <p class="veef-footer__desc">French firm dedicated to VAT and EPR compliance for cross-border e-commerce sellers and their advisors.</p>
+          </div>
+
+          <div class="veef-footer__grid">
+            <div class="veef-footer__column">
+              <h4 class="veef-footer__title">Services</h4>
+              <ul class="veef-footer__list">
+                <li class="veef-footer__item"><a href="../vat-representation.html" class="veef-footer__link">VAT representation</a></li>
+                <li class="veef-footer__item"><a href="../epr-representation.html" class="veef-footer__link">EPR representation</a></li>
+              </ul>
+            </div>
+
+            <div class="veef-footer__column">
+              <h4 class="veef-footer__title">Tools</h4>
+              <ul class="veef-footer__list">
+                <li class="veef-footer__item"><a href="#" class="veef-footer__link">VAT Checker</a></li>
+                <li class="veef-footer__item"><a href="#" class="veef-footer__link">UIN Checker</a></li>
+              </ul>
+            </div>
+
+            <div class="veef-footer__column">
+              <h4 class="veef-footer__title">Resources</h4>
+              <ul class="veef-footer__list">
+                <li class="veef-footer__item"><a href="index.html" class="veef-footer__link">Blog</a></li>
+                <li class="veef-footer__item"><a href="../faq.html" class="veef-footer__link">FAQ</a></li>
+                <li class="veef-footer__item"><a href="../contact.html" class="veef-footer__link">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="veef-footer__column">
+              <h4 class="veef-footer__title">Company</h4>
+              <ul class="veef-footer__list">
+                <li class="veef-footer__item"><a href="../index.html#founder" class="veef-footer__link">About</a></li>
+                <li class="veef-footer__item"><a href="#" class="veef-footer__link">Legal notices</a></li>
+                <li class="veef-footer__item"><a href="#" class="veef-footer__link">Privacy policy</a></li>
+                <li class="veef-footer__item"><a href="#" class="veef-footer__link">Terms and conditions</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="veef-footer__top">
+          <div class="veef-footer__newsletter">
+            <p class="veef-footer__newsletter-desc">Get the latest insights on French VAT and EPR compliance delivered to your inbox.</p>
+            <form class="veef-footer__newsletter-form" data-ht-newsletter-form>
+              <input type="email" class="veef-footer__newsletter-input" placeholder="Your email address" required>
+              <button type="submit" class="veef-footer__newsletter-btn">Subscribe</button>
+            </form>
+            <p class="veef-footer__newsletter-note">By subscribing, you agree to our Privacy Policy.</p>
+          </div>
+        </div>
+
+        <div class="veef-footer__bottom">
+          <p class="veef-footer__copyright">© 2025 VAT EPR EXPERT FRANCE. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="veef-back-to-top" data-ht-back-to-top aria-label="Back to top">
+      <svg class="veef-back-to-top__icon" viewBox="0 0 24 24" fill="none">
+        <path d="M18 15l-6-6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <script data-ht-main-script>
+    // Mobile menu toggle
+    const mobileToggle = document.querySelector('[data-ht-mobile-toggle]');
+    const mobileMenu = document.querySelector('[data-ht-mobile-menu]');
+
+    if (mobileToggle && mobileMenu) {
+      mobileToggle.addEventListener('click', () => {
+        const isOpen = mobileMenu.classList.contains('is-open');
+        mobileMenu.classList.toggle('is-open');
+        mobileToggle.setAttribute('aria-expanded', !isOpen);
+      });
+    }
+
+    // Back to Top Button
+    const backToTopButton = document.querySelector('[data-ht-back-to-top]');
+    if (backToTopButton) {
+      const scrollThreshold = 400;
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > scrollThreshold) {
+          backToTopButton.classList.add('is-visible');
+        } else {
+          backToTopButton.classList.remove('is-visible');
+        }
+      });
+
+      backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    }
+  </script>
+</body>
+</html>
+
