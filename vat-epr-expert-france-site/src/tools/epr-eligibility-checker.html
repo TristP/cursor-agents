@@ -1,0 +1,2029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>French EPR Eligibility Checker | VAT EPR EXPERT FRANCE</title>
+  <meta name="description" content="Find out which French EPR (Extended Producer Responsibility) categories may apply to your products. Free online tool for e-commerce sellers.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style data-ht-styles>
+    /* Reset and Base */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin-top: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-left: 0;
+      padding-top: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+      padding-left: 0;
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #111827;
+      background-color: #F9FAFB;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ul,
+    ol {
+      list-style: none;
+    }
+
+    /* Container */
+    .veef-container {
+      width: 100%;
+      max-width: 1280px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    /* Header */
+    .veef-header {
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: #ffffff;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-bottom-color: #E5E7EB;
+    }
+
+    .veef-header__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    .veef-logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .veef-logo__text {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #111827;
+      letter-spacing: -0.02em;
+    }
+
+    .veef-logo__dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: #10B981;
+      border-radius: 50%;
+      margin-left: 4px;
+      align-self: flex-end;
+      margin-bottom: 4px;
+    }
+
+    .veef-nav {
+      display: flex;
+      align-items: center;
+    }
+
+    .veef-nav__list {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .veef-nav__item {
+      display: flex;
+      align-items: center;
+    }
+
+    .veef-nav__link {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: #374151;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 16px;
+      padding-right: 16px;
+      border-radius: 6px;
+      transition-property: color, background-color;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+    }
+
+    .veef-nav__link:hover {
+      color: #1E3A8A;
+      background-color: #F3F4F6;
+    }
+
+    .veef-nav__cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: #1E3A8A;
+      color: #ffffff;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      border-radius: 6px;
+      margin-left: 8px;
+      transition-property: background-color;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+    }
+
+    .veef-nav__cta:hover {
+      background-color: #1e40af;
+    }
+
+    .veef-nav__login {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: transparent;
+      color: #1E3A8A;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      border-radius: 6px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #1E3A8A;
+      margin-left: 8px;
+      transition-property: background-color, color;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+    }
+
+    .veef-nav__login:hover {
+      background-color: #1E3A8A;
+      color: #ffffff;
+    }
+
+    .veef-nav__dropdown {
+      position: relative;
+    }
+
+    .veef-nav__dropdown-trigger {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: #374151;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 16px;
+      padding-right: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition-property: color, background-color;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+    }
+
+    .veef-nav__dropdown-trigger:hover {
+      color: #1E3A8A;
+      background-color: #F3F4F6;
+    }
+
+    .veef-nav__dropdown-icon {
+      width: 12px;
+      height: 12px;
+      transition-property: transform;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+    }
+
+    .veef-nav__dropdown:hover .veef-nav__dropdown-icon {
+      transform: rotate(180deg);
+    }
+
+    .veef-nav__dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 320px;
+      background-color: #ffffff;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #E5E7EB;
+      border-radius: 12px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+      padding-top: 16px;
+      padding-bottom: 16px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(8px);
+      transition-property: opacity, visibility, transform;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+      z-index: 100;
+    }
+
+    .veef-nav__dropdown--mega .veef-nav__dropdown-menu {
+      min-width: 380px;
+    }
+
+    .veef-nav__dropdown:hover .veef-nav__dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .veef-nav__dropdown-group {
+      padding-bottom: 12px;
+      margin-bottom: 12px;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-bottom-color: #F3F4F6;
+    }
+
+    .veef-nav__dropdown-group:last-child {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom-width: 0;
+    }
+
+    .veef-nav__dropdown-group-title {
+      font-size: 0.6875rem;
+      font-weight: 600;
+      color: #9CA3AF;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-bottom: 8px;
+    }
+
+    .veef-nav__dropdown-item {
+      display: block;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 16px;
+      padding-right: 16px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: #374151;
+      transition-property: color, background-color;
+      transition-duration: 0.15s;
+      transition-timing-function: ease;
+    }
+
+    .veef-nav__dropdown-item:hover {
+      color: #1E3A8A;
+      background-color: #F3F4F6;
+    }
+
+    .veef-nav__dropdown-desc {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 400;
+      color: #6B7280;
+      margin-top: 2px;
+    }
+
+    .veef-nav__dropdown-badge {
+      display: inline-block;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      color: #F59E0B;
+      background-color: #FEF3C7;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      padding-left: 6px;
+      padding-right: 6px;
+      border-radius: 4px;
+      margin-left: 8px;
+    }
+
+    .veef-mobile-toggle {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
+      border-width: 0;
+      border-style: none;
+      cursor: pointer;
+    }
+
+    .veef-mobile-toggle__line {
+      width: 24px;
+      height: 2px;
+      background-color: #374151;
+      margin-top: 3px;
+      margin-bottom: 3px;
+      transition-property: transform, opacity;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+    }
+
+    /* Mobile Menu */
+    .veef-mobile-menu {
+      display: none;
+      position: fixed;
+      top: 73px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ffffff;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      padding-left: 24px;
+      padding-right: 24px;
+      z-index: 999;
+      overflow-y: auto;
+    }
+
+    .veef-mobile-menu.is-active {
+      display: block;
+    }
+
+    .veef-mobile-menu__list {
+      margin-bottom: 24px;
+    }
+
+    .veef-mobile-menu__item {
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-bottom-color: #F3F4F6;
+    }
+
+    .veef-mobile-menu__link {
+      display: block;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #374151;
+    }
+
+    .veef-mobile-menu__cta {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      background-color: #1E3A8A;
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    .veef-mobile-menu__login {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      background-color: transparent;
+      color: #1E3A8A;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 8px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #1E3A8A;
+    }
+
+    /* Mobile Menu Accordion */
+    .veef-mobile-menu__accordion {
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-bottom-color: #F3F4F6;
+    }
+
+    .veef-mobile-menu__accordion-trigger {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #374151;
+      background-color: transparent;
+      border-width: 0;
+      cursor: pointer;
+      text-align: left;
+    }
+
+    .veef-mobile-menu__accordion-icon {
+      width: 16px;
+      height: 16px;
+      transition-property: transform;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+    }
+
+    .veef-mobile-menu__accordion.is-open .veef-mobile-menu__accordion-icon {
+      transform: rotate(180deg);
+    }
+
+    .veef-mobile-menu__accordion-content {
+      display: none;
+      padding-bottom: 16px;
+    }
+
+    .veef-mobile-menu__accordion.is-open .veef-mobile-menu__accordion-content {
+      display: block;
+    }
+
+    .veef-mobile-menu__accordion-group {
+      margin-bottom: 16px;
+    }
+
+    .veef-mobile-menu__accordion-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .veef-mobile-menu__accordion-group-title {
+      font-size: 0.6875rem;
+      font-weight: 600;
+      color: #9CA3AF;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding-bottom: 8px;
+    }
+
+    .veef-mobile-menu__accordion-link {
+      display: block;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 12px;
+      font-size: 0.9375rem;
+      color: #374151;
+    }
+
+    .veef-mobile-menu__accordion-link {
+      font-weight: 600;
+      color: #1E3A8A;
+    }
+
+    /* Tool Page Styles */
+    .veef-tool-page {
+      padding-top: 48px;
+      padding-bottom: 80px;
+    }
+
+    .veef-tool-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .veef-tool-header__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      padding-left: 12px;
+      padding-right: 12px;
+      background-color: #ECFDF5;
+      color: #059669;
+      font-size: 0.875rem;
+      font-weight: 500;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+
+    .veef-tool-header__badge-icon {
+      width: 16px;
+      height: 16px;
+    }
+
+    .veef-tool-header__title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .veef-tool-header__subtitle {
+      font-size: 1.25rem;
+      color: #10B981;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .veef-tool-header__desc {
+      font-size: 1.125rem;
+      color: #6B7280;
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Tool Card */
+    .veef-tool-card {
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      padding-top: 40px;
+      padding-bottom: 40px;
+      padding-left: 40px;
+      padding-right: 40px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Question Sections */
+    .veef-question-section {
+      margin-bottom: 32px;
+      padding-bottom: 32px;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-bottom-color: #F3F4F6;
+    }
+
+    .veef-question-section:last-of-type {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom-width: 0;
+    }
+
+    .veef-question-section__title {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: #111827;
+      margin-bottom: 8px;
+    }
+
+    .veef-question-section__number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background-color: #1E3A8A;
+      color: #ffffff;
+      font-size: 0.875rem;
+      font-weight: 600;
+      border-radius: 50%;
+      margin-right: 12px;
+    }
+
+    .veef-question-section__hint {
+      font-size: 0.875rem;
+      color: #9CA3AF;
+      margin-bottom: 16px;
+      font-style: italic;
+    }
+
+    /* Form Elements */
+    .veef-form-group {
+      margin-bottom: 20px;
+    }
+
+    .veef-form-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .veef-form-label {
+      display: block;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: #374151;
+      margin-bottom: 8px;
+    }
+
+    .veef-radio-group {
+      display: flex;
+      gap: 16px;
+    }
+
+    .veef-radio-option {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+    }
+
+    .veef-radio-option input[type="radio"] {
+      width: 18px;
+      height: 18px;
+      accent-color: #1E3A8A;
+      cursor: pointer;
+    }
+
+    .veef-radio-option__label {
+      font-size: 0.9375rem;
+      color: #374151;
+    }
+
+    .veef-checkbox-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .veef-checkbox-option {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 16px;
+      padding-right: 16px;
+      background-color: #F9FAFB;
+      border-radius: 8px;
+      cursor: pointer;
+      transition-property: background-color, box-shadow;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+    }
+
+    .veef-checkbox-option:hover {
+      background-color: #F3F4F6;
+    }
+
+    .veef-checkbox-option.is-checked {
+      background-color: #EFF6FF;
+      box-shadow: 0 0 0 2px #1E3A8A;
+    }
+
+    .veef-checkbox-option input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      accent-color: #1E3A8A;
+      cursor: pointer;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .veef-checkbox-option__content {
+      flex-grow: 1;
+    }
+
+    .veef-checkbox-option__label {
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: #111827;
+      margin-bottom: 4px;
+    }
+
+    .veef-checkbox-option__desc {
+      font-size: 0.8125rem;
+      color: #6B7280;
+    }
+
+    /* EPR Category Card */
+    .veef-epr-category {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      padding-left: 16px;
+      padding-right: 16px;
+      background-color: #F9FAFB;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    .veef-epr-category:last-child {
+      margin-bottom: 0;
+    }
+
+    .veef-epr-category__checkbox {
+      width: 20px;
+      height: 20px;
+      accent-color: #10B981;
+      cursor: pointer;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .veef-epr-category__content {
+      flex-grow: 1;
+    }
+
+    .veef-epr-category__title {
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: #111827;
+      margin-bottom: 4px;
+    }
+
+    .veef-epr-category__code {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #10B981;
+      background-color: #ECFDF5;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      padding-left: 6px;
+      padding-right: 6px;
+      border-radius: 4px;
+      margin-left: 8px;
+    }
+
+    .veef-epr-category__question {
+      font-size: 0.875rem;
+      color: #6B7280;
+      margin-bottom: 8px;
+    }
+
+    .veef-epr-category__example {
+      font-size: 0.8125rem;
+      color: #9CA3AF;
+      font-style: italic;
+    }
+
+    /* Submit Button */
+    .veef-tool-submit {
+      margin-top: 32px;
+      text-align: center;
+    }
+
+    .veef-tool-submit__btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      padding-left: 32px;
+      padding-right: 32px;
+      background-color: #10B981;
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 8px;
+      border-width: 0;
+      cursor: pointer;
+      transition-property: background-color, transform;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+    }
+
+    .veef-tool-submit__btn:hover {
+      background-color: #059669;
+      transform: translateY(-2px);
+    }
+
+    .veef-tool-submit__btn-icon {
+      width: 20px;
+      height: 20px;
+    }
+
+    /* Results Section */
+    .veef-results {
+      display: none;
+      margin-top: 40px;
+      padding-top: 40px;
+      border-top-width: 2px;
+      border-top-style: solid;
+      border-top-color: #E5E7EB;
+    }
+
+    .veef-results.is-visible {
+      display: block;
+    }
+
+    .veef-results__header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .veef-results__icon {
+      width: 64px;
+      height: 64px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 16px;
+    }
+
+    .veef-results__icon--success {
+      color: #10B981;
+    }
+
+    .veef-results__icon--warning {
+      color: #F59E0B;
+    }
+
+    .veef-results__title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 8px;
+    }
+
+    .veef-results__subtitle {
+      font-size: 1rem;
+      color: #6B7280;
+    }
+
+    /* Result Badges */
+    .veef-results__badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+
+    .veef-results__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 16px;
+      padding-right: 16px;
+      background-color: #ECFDF5;
+      color: #059669;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      transition-property: background-color, transform;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+    }
+
+    .veef-results__badge:hover {
+      background-color: #D1FAE5;
+      transform: translateY(-2px);
+    }
+
+    .veef-results__badge-icon {
+      width: 18px;
+      height: 18px;
+    }
+
+    .veef-results__disclaimer {
+      font-size: 0.875rem;
+      color: #6B7280;
+      text-align: center;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: #F9FAFB;
+      border-radius: 8px;
+      margin-bottom: 32px;
+    }
+
+    /* No Results Message */
+    .veef-results__no-match {
+      text-align: center;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      padding-left: 24px;
+      padding-right: 24px;
+      background-color: #FFFBEB;
+      border-radius: 12px;
+      margin-bottom: 32px;
+    }
+
+    .veef-results__no-match-icon {
+      width: 48px;
+      height: 48px;
+      color: #F59E0B;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 16px;
+    }
+
+    .veef-results__no-match-title {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: #92400E;
+      margin-bottom: 8px;
+    }
+
+    .veef-results__no-match-text {
+      font-size: 0.9375rem;
+      color: #B45309;
+    }
+
+    /* Not Applicable Message */
+    .veef-not-applicable {
+      display: none;
+      text-align: center;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      padding-left: 24px;
+      padding-right: 24px;
+      background-color: #F0FDF4;
+      border-radius: 12px;
+      margin-top: 24px;
+    }
+
+    .veef-not-applicable.is-visible {
+      display: block;
+    }
+
+    .veef-not-applicable__icon {
+      width: 48px;
+      height: 48px;
+      color: #10B981;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 16px;
+    }
+
+    .veef-not-applicable__title {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: #065F46;
+      margin-bottom: 8px;
+    }
+
+    .veef-not-applicable__text {
+      font-size: 0.9375rem;
+      color: #047857;
+      margin-bottom: 16px;
+    }
+
+    .veef-not-applicable__link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #1E3A8A;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    /* CTA Box */
+    .veef-cta-box {
+      background-color: #1E3A8A;
+      border-radius: 12px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      padding-left: 32px;
+      padding-right: 32px;
+      text-align: center;
+    }
+
+    .veef-cta-box__title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+
+    .veef-cta-box__text {
+      font-size: 1rem;
+      color: #BFDBFE;
+      margin-bottom: 20px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .veef-cta-box__btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      padding-left: 28px;
+      padding-right: 28px;
+      background-color: #ffffff;
+      color: #1E3A8A;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      transition-property: background-color, transform;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+    }
+
+    .veef-cta-box__btn:hover {
+      background-color: #F3F4F6;
+      transform: translateY(-2px);
+    }
+
+    .veef-cta-box__btn-icon {
+      width: 18px;
+      height: 18px;
+    }
+
+    /* Page Disclaimer */
+    .veef-page-disclaimer {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top-width: 1px;
+      border-top-style: solid;
+      border-top-color: #E5E7EB;
+    }
+
+    .veef-page-disclaimer__text {
+      font-size: 0.8125rem;
+      color: #9CA3AF;
+      text-align: center;
+      line-height: 1.7;
+    }
+
+    /* Footer */
+    .veef-footer {
+      background-color: #111827;
+      background: linear-gradient(135deg, #1a2332 0%, #111827 100%);
+      color: #ffffff;
+      padding-top: 64px;
+      padding-bottom: 32px;
+    }
+
+    .veef-footer__main {
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+      margin-bottom: 16px;
+    }
+
+    .veef-footer__brand {
+      max-width: 380px;
+    }
+
+    .veef-footer__logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .veef-footer__logo-img {
+      height: 32px;
+      width: auto;
+      filter: brightness(0) invert(1);
+    }
+
+    .veef-footer__desc {
+      font-size: 0.9375rem;
+      color: #9CA3AF;
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+
+    .veef-footer__newsletter {
+      background-color: #1F2937;
+      background: linear-gradient(135deg, #1F2937 0%, #374151 100%);
+      border-width: 1px;
+      border-style: solid;
+      border-color: #374151;
+      border-radius: 12px;
+      padding-top: 28px;
+      padding-bottom: 28px;
+      padding-left: 28px;
+      padding-right: 28px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      max-width: 440px;
+    }
+
+    .veef-footer__newsletter-desc {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
+
+    .veef-footer__newsletter-form {
+      display: flex;
+      gap: 8px;
+    }
+
+    .veef-footer__newsletter-input {
+      flex-grow: 1;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 16px;
+      padding-right: 16px;
+      background-color: #374151;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #4B5563;
+      border-radius: 6px;
+      color: #ffffff;
+      font-size: 0.9375rem;
+    }
+
+    .veef-footer__newsletter-input::placeholder {
+      color: #9CA3AF;
+    }
+
+    .veef-footer__newsletter-btn {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: #1E3A8A;
+      color: #ffffff;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      border-width: 0;
+      border-radius: 6px;
+      cursor: pointer;
+      transition-property: background-color;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+    }
+
+    .veef-footer__newsletter-btn:hover {
+      background-color: #1e40af;
+    }
+
+    .veef-footer__column--newsletter .veef-footer__newsletter {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .veef-footer__column--newsletter .veef-footer__newsletter-desc {
+      font-size: 0.875rem;
+      margin-bottom: 12px;
+    }
+
+    .veef-footer__column--newsletter .veef-footer__newsletter-form {
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .veef-footer__column--newsletter .veef-footer__newsletter-input {
+      font-size: 0.875rem;
+      padding: 10px 12px;
+    }
+
+    .veef-footer__column--newsletter .veef-footer__newsletter-btn {
+      font-size: 0.875rem;
+      padding: 10px 16px;
+    }
+
+    .veef-footer__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    .veef-footer__grid--secondary {
+      justify-content: flex-end;
+      margin-bottom: 0;
+    }
+
+    .veef-footer__grids {
+      flex-grow: 1;
+    }
+
+    .veef-footer__column {
+      min-width: 0;
+    }
+
+    .veef-footer__title {
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
+
+    .veef-footer__list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .veef-footer__link {
+      font-size: 0.875rem;
+      color: #9CA3AF;
+      transition-property: color;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+    }
+
+    .veef-footer__link:hover {
+      color: #ffffff;
+    }
+
+    .veef-footer__bottom {
+      padding-top: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .veef-footer__copyright {
+      font-size: 0.875rem;
+      color: #6B7280;
+    }
+
+    /* Responsive */
+    @media (min-width: 768px) {
+      .veef-footer__main {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 32px;
+      }
+
+      .veef-footer__brand {
+        max-width: 380px;
+      }
+
+      .veef-footer__grids {
+        flex-shrink: 0;
+      }
+
+      .veef-footer__grid {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 48px;
+        margin-bottom: 24px;
+      }
+
+      .veef-footer__grid--secondary {
+        grid-template-columns: repeat(2, auto);
+        margin-left: auto;
+        margin-bottom: 0;
+      }
+
+      .veef-footer__bottom {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .veef-nav {
+        display: none;
+      }
+
+      .veef-mobile-toggle {
+        display: flex;
+      }
+
+      .veef-tool-header__title {
+        font-size: 2rem;
+      }
+
+      .veef-tool-card {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .veef-tool-header__title {
+        font-size: 1.75rem;
+      }
+
+      .veef-tool-header__desc {
+        font-size: 1rem;
+      }
+
+      .veef-radio-group {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .veef-footer__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+      }
+
+      .veef-results__badges {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .veef-results__badge {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 479px) {
+      .veef-tool-header__title {
+        font-size: 1.5rem;
+      }
+
+      .veef-footer__newsletter-form {
+        flex-direction: column;
+      }
+
+      .veef-cta-box {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="htflow-wrapper">
+    <!-- Header -->
+    <header class="veef-header">
+      <div class="veef-container">
+        <div class="veef-header__inner">
+          <a href="../index.html" class="veef-logo">
+            <span class="veef-logo__text">VAT EPR EXPERT FRANCE</span>
+          </a>
+          <nav class="veef-nav">
+            <ul class="veef-nav__list">
+              <!-- VAT Services Dropdown -->
+              <li class="veef-nav__item veef-nav__dropdown veef-nav__dropdown--mega">
+                <a href="../vat-representation.html" class="veef-nav__dropdown-trigger">
+                  VAT services
+                  <svg class="veef-nav__dropdown-icon" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 4.5l3 3 3-3"/>
+                  </svg>
+                </a>
+                <div class="veef-nav__dropdown-menu">
+                  <div class="veef-nav__dropdown-group">
+                    <div class="veef-nav__dropdown-group-title">Overview & Mandate</div>
+                    <a href="../vat-representation.html#fiscal-representation" class="veef-nav__dropdown-item">Fiscal representation in France</a>
+                  </div>
+                  <div class="veef-nav__dropdown-group">
+                    <div class="veef-nav__dropdown-group-title">Registrations & Deregistrations</div>
+                    <a href="#" class="veef-nav__dropdown-item">EORI registration</a>
+                    <a href="#" class="veef-nav__dropdown-item">French VAT registration</a>
+                    <a href="#" class="veef-nav__dropdown-item">OSS / IOSS registration</a>
+                    <a href="#" class="veef-nav__dropdown-item">VAT deregistration</a>
+                  </div>
+                  <div class="veef-nav__dropdown-group">
+                    <div class="veef-nav__dropdown-group-title">Ongoing Compliance</div>
+                    <a href="#" class="veef-nav__dropdown-item">VAT reporting (CA3)</a>
+                    <a href="#" class="veef-nav__dropdown-item">OSS / IOSS reporting</a>
+                    <a href="#" class="veef-nav__dropdown-item">ERTVA reporting</a>
+                    <a href="#" class="veef-nav__dropdown-item">VAT audit support</a>
+                  </div>
+                </div>
+              </li>
+
+              <!-- EPR Services Dropdown -->
+              <li class="veef-nav__item veef-nav__dropdown veef-nav__dropdown--mega">
+                <a href="../epr-representation.html" class="veef-nav__dropdown-trigger">
+                  EPR services
+                  <svg class="veef-nav__dropdown-icon" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 4.5l3 3 3-3"/>
+                  </svg>
+                </a>
+                <div class="veef-nav__dropdown-menu">
+                  <div class="veef-nav__dropdown-group">
+                    <div class="veef-nav__dropdown-group-title">Overview & Mandate</div>
+                    <a href="../epr-representation.html#authorised-representation" class="veef-nav__dropdown-item">Authorised representation in France</a>
+                  </div>
+                  <div class="veef-nav__dropdown-group">
+                    <div class="veef-nav__dropdown-group-title">Registrations & Deregistrations</div>
+                    <a href="#" class="veef-nav__dropdown-item">Producer registration & UIN management</a>
+                    <a href="#" class="veef-nav__dropdown-item">UIN deregistration</a>
+                    <a href="#" class="veef-nav__dropdown-item">Eco-organism & agent transfer</a>
+                  </div>
+                  <div class="veef-nav__dropdown-group">
+                    <div class="veef-nav__dropdown-group-title">Ongoing Compliance</div>
+                    <a href="#" class="veef-nav__dropdown-item">Declarations & reporting</a>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Tools Dropdown -->
+              <li class="veef-nav__item veef-nav__dropdown">
+                <span class="veef-nav__dropdown-trigger">
+                  Tools
+                  <svg class="veef-nav__dropdown-icon" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 4.5l3 3 3-3"/>
+                  </svg>
+                </span>
+                <div class="veef-nav__dropdown-menu">
+                  <a href="#" class="veef-nav__dropdown-item">
+                    VAT Checker
+                    <span class="veef-nav__dropdown-badge">Coming soon</span>
+                    <span class="veef-nav__dropdown-desc">Verify VAT numbers instantly</span>
+                  </a>
+                  <a href="#" class="veef-nav__dropdown-item">
+                    UIN Checker
+                    <span class="veef-nav__dropdown-badge">Coming soon</span>
+                    <span class="veef-nav__dropdown-desc">Look up EPR identification numbers</span>
+                  </a>
+                  <a href="epr-eligibility-checker.html" class="veef-nav__dropdown-item">
+                    EPR Eligibility Checker
+                    <span class="veef-nav__dropdown-desc">Find out which EPR categories apply</span>
+                  </a>
+                </div>
+              </li>
+
+              <li class="veef-nav__item"><a href="../blog/index.html" class="veef-nav__link">Blog</a></li>
+              <li class="veef-nav__item"><a href="../faq.html" class="veef-nav__link">FAQ</a></li>
+              <li class="veef-nav__item"><a href="../contact.html" class="veef-nav__cta">Contact us</a></li>
+              <li class="veef-nav__item"><a href="#" class="veef-nav__login">Login</a></li>
+            </ul>
+          </nav>
+          <button class="veef-mobile-toggle" data-ht-mobile-toggle aria-label="Toggle menu">
+            <span class="veef-mobile-toggle__line"></span>
+            <span class="veef-mobile-toggle__line"></span>
+            <span class="veef-mobile-toggle__line"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <nav class="veef-mobile-menu" data-ht-mobile-menu>
+        <div class="veef-mobile-menu__accordion" data-ht-accordion>
+          <button class="veef-mobile-menu__accordion-trigger" data-ht-accordion-trigger>
+            VAT services
+            <svg class="veef-mobile-menu__accordion-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 6l4 4 4-4"/>
+            </svg>
+          </button>
+          <div class="veef-mobile-menu__accordion-content">
+            <div class="veef-mobile-menu__accordion-group">
+              <div class="veef-mobile-menu__accordion-group-title">Overview & Mandate</div>
+              <a href="../vat-representation.html#fiscal-representation" class="veef-mobile-menu__accordion-link">Fiscal representation in France</a>
+            </div>
+            <div class="veef-mobile-menu__accordion-group">
+              <div class="veef-mobile-menu__accordion-group-title">Registrations</div>
+              <a href="#" class="veef-mobile-menu__accordion-link">EORI registration</a>
+              <a href="#" class="veef-mobile-menu__accordion-link">French VAT registration</a>
+              <a href="#" class="veef-mobile-menu__accordion-link">OSS / IOSS registration</a>
+              <a href="#" class="veef-mobile-menu__accordion-link">VAT deregistration</a>
+            </div>
+            <div class="veef-mobile-menu__accordion-group">
+              <div class="veef-mobile-menu__accordion-group-title">Ongoing Compliance</div>
+              <a href="#" class="veef-mobile-menu__accordion-link">VAT reporting (CA3)</a>
+              <a href="#" class="veef-mobile-menu__accordion-link">OSS / IOSS reporting</a>
+              <a href="#" class="veef-mobile-menu__accordion-link">ERTVA reporting</a>
+              <a href="#" class="veef-mobile-menu__accordion-link">VAT audit support</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="veef-mobile-menu__accordion" data-ht-accordion>
+          <button class="veef-mobile-menu__accordion-trigger" data-ht-accordion-trigger>
+            EPR services
+            <svg class="veef-mobile-menu__accordion-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 6l4 4 4-4"/>
+            </svg>
+          </button>
+          <div class="veef-mobile-menu__accordion-content">
+            <div class="veef-mobile-menu__accordion-group">
+              <div class="veef-mobile-menu__accordion-group-title">Overview & Mandate</div>
+              <a href="../epr-representation.html#authorised-representation" class="veef-mobile-menu__accordion-link">Authorised representation in France</a>
+            </div>
+            <div class="veef-mobile-menu__accordion-group">
+              <div class="veef-mobile-menu__accordion-group-title">Registrations & Deregistrations</div>
+              <a href="#" class="veef-mobile-menu__accordion-link">Producer registration & UIN</a>
+              <a href="#" class="veef-mobile-menu__accordion-link">UIN deregistration</a>
+              <a href="#" class="veef-mobile-menu__accordion-link">Eco-organism & agent transfer</a>
+            </div>
+            <div class="veef-mobile-menu__accordion-group">
+              <div class="veef-mobile-menu__accordion-group-title">Ongoing Compliance</div>
+              <a href="#" class="veef-mobile-menu__accordion-link">Declarations & reporting</a>
+            </div>
+          </div>
+        </div>
+
+        <ul class="veef-mobile-menu__list">
+          <li class="veef-mobile-menu__item"><a href="epr-eligibility-checker.html" class="veef-mobile-menu__link">EPR Eligibility Checker</a></li>
+          <li class="veef-mobile-menu__item"><a href="../blog/index.html" class="veef-mobile-menu__link">Blog</a></li>
+          <li class="veef-mobile-menu__item"><a href="../faq.html" class="veef-mobile-menu__link">FAQ</a></li>
+        </ul>
+        <a href="../contact.html" class="veef-mobile-menu__cta">Contact us</a>
+        <a href="#" class="veef-mobile-menu__login">Login</a>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="veef-tool-page">
+      <div class="veef-container">
+        <!-- Tool Header -->
+        <div class="veef-tool-header">
+          <span class="veef-tool-header__badge">
+            <svg class="veef-tool-header__badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 12l2 2 4-4"/>
+              <circle cx="12" cy="12" r="10"/>
+            </svg>
+            Free tool
+          </span>
+          <h1 class="veef-tool-header__title">French EPR Eligibility Checker</h1>
+          <p class="veef-tool-header__subtitle">Find out which French EPR categories may apply to your products</p>
+          <p class="veef-tool-header__desc">Use this quick checker to see which French Extended Producer Responsibility (EPR) categories may be relevant for your activity. This tool is educational only and does not replace a detailed assessment.</p>
+        </div>
+
+        <!-- Tool Card -->
+        <div class="veef-tool-card" data-ht-tool-form>
+          <!-- Section 1: Basic Scope -->
+          <div class="veef-question-section" data-ht-section="scope">
+            <h2 class="veef-question-section__title">
+              <span class="veef-question-section__number">1</span>
+              Basic scope
+            </h2>
+            
+            <div class="veef-form-group">
+              <label class="veef-form-label">Do you place products or packaging on the French market?</label>
+              <div class="veef-radio-group">
+                <label class="veef-radio-option">
+                  <input type="radio" name="places-on-market" value="yes" data-ht-input="places-on-market">
+                  <span class="veef-radio-option__label">Yes</span>
+                </label>
+                <label class="veef-radio-option">
+                  <input type="radio" name="places-on-market" value="no" data-ht-input="places-on-market">
+                  <span class="veef-radio-option__label">No</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="veef-form-group">
+              <label class="veef-form-label">Who are your customers?</label>
+              <div class="veef-checkbox-group">
+                <label class="veef-checkbox-option" data-ht-checkbox-option>
+                  <input type="checkbox" name="customer-type" value="b2c" data-ht-input="customer-b2c">
+                  <div class="veef-checkbox-option__content">
+                    <div class="veef-checkbox-option__label">Consumers (B2C)</div>
+                    <div class="veef-checkbox-option__desc">You sell directly to end consumers</div>
+                  </div>
+                </label>
+                <label class="veef-checkbox-option" data-ht-checkbox-option>
+                  <input type="checkbox" name="customer-type" value="b2b" data-ht-input="customer-b2b">
+                  <div class="veef-checkbox-option__content">
+                    <div class="veef-checkbox-option__label">Businesses (B2B)</div>
+                    <div class="veef-checkbox-option__desc">You sell to other businesses</div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Not Applicable Message -->
+          <div class="veef-not-applicable" data-ht-not-applicable>
+            <svg class="veef-not-applicable__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 16v-4"/>
+              <path d="M12 8h.01"/>
+            </svg>
+            <h3 class="veef-not-applicable__title">French EPR may not apply to you</h3>
+            <p class="veef-not-applicable__text">Based on your answer, you may not fall under French EPR rules. However, if your situation is complex (cross-border structures, platforms, returns, etc.), we recommend a detailed review.</p>
+            <a href="../contact.html?topic=epr-review" class="veef-not-applicable__link">
+              Contact us for clarification
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Section 2: Product/Packaging Questions -->
+          <div class="veef-question-section" data-ht-section="products" style="display: none;">
+            <h2 class="veef-question-section__title">
+              <span class="veef-question-section__number">2</span>
+              Product & packaging categories
+            </h2>
+            <p class="veef-question-section__hint">Select all that apply to your business</p>
+
+            <!-- Packaging & Paper (EMPAP) -->
+            <div class="veef-epr-category">
+              <input type="checkbox" class="veef-epr-category__checkbox" name="epr-category" value="empap" data-ht-epr-category="empap">
+              <div class="veef-epr-category__content">
+                <div class="veef-epr-category__title">
+                  Packaging & Paper
+                  <span class="veef-epr-category__code">EMPAP</span>
+                </div>
+                <p class="veef-epr-category__question">Do you send products to French customers in packaging that you choose or control (boxes, envelopes, filler, labels, etc.)?</p>
+                <p class="veef-epr-category__example">Example: you run an online shop and choose your own shipping boxes and envelopes.</p>
+              </div>
+            </div>
+
+            <!-- Electrical and Electronic Equipment (WEEE) -->
+            <div class="veef-epr-category">
+              <input type="checkbox" class="veef-epr-category__checkbox" name="epr-category" value="weee" data-ht-epr-category="weee">
+              <div class="veef-epr-category__content">
+                <div class="veef-epr-category__title">
+                  Electrical & Electronic Equipment
+                  <span class="veef-epr-category__code">WEEE</span>
+                </div>
+                <p class="veef-epr-category__question">Do you sell electrical or electronic products to French customers (devices that use electricity or batteries)?</p>
+                <p class="veef-epr-category__example">Example: smartphones, laptops, kitchen appliances, LED lights, cables.</p>
+              </div>
+            </div>
+
+            <!-- Batteries (BAT) -->
+            <div class="veef-epr-category">
+              <input type="checkbox" class="veef-epr-category__checkbox" name="epr-category" value="bat" data-ht-epr-category="bat">
+              <div class="veef-epr-category__content">
+                <div class="veef-epr-category__title">
+                  Batteries
+                  <span class="veef-epr-category__code">BAT</span>
+                </div>
+                <p class="veef-epr-category__question">Do your products include standalone batteries or battery-powered devices where you are considered the producer?</p>
+                <p class="veef-epr-category__example">Example: power banks, rechargeable batteries, toys with batteries included.</p>
+              </div>
+            </div>
+
+            <!-- Textiles (TLC) -->
+            <div class="veef-epr-category">
+              <input type="checkbox" class="veef-epr-category__checkbox" name="epr-category" value="tlc" data-ht-epr-category="tlc">
+              <div class="veef-epr-category__content">
+                <div class="veef-epr-category__title">
+                  Textiles
+                  <span class="veef-epr-category__code">TLC</span>
+                </div>
+                <p class="veef-epr-category__question">Do you sell clothing, shoes, household textiles or similar textile products to French customers?</p>
+                <p class="veef-epr-category__example">Example: t-shirts, jeans, sneakers, bed linens, towels, curtains.</p>
+              </div>
+            </div>
+
+            <!-- Furniture (EA) -->
+            <div class="veef-epr-category">
+              <input type="checkbox" class="veef-epr-category__checkbox" name="epr-category" value="ea" data-ht-epr-category="ea">
+              <div class="veef-epr-category__content">
+                <div class="veef-epr-category__title">
+                  Furniture
+                  <span class="veef-epr-category__code">EA</span>
+                </div>
+                <p class="veef-epr-category__question">Do you sell furniture (home, office, etc.) to French customers?</p>
+                <p class="veef-epr-category__example">Example: chairs, tables, sofas, shelves, mattresses, outdoor furniture.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 3: Additional Questions -->
+          <div class="veef-question-section" data-ht-section="additional" style="display: none;">
+            <h2 class="veef-question-section__title">
+              <span class="veef-question-section__number">3</span>
+              Additional information
+            </h2>
+            <p class="veef-question-section__hint">This helps us provide more accurate guidance</p>
+
+            <div class="veef-checkbox-group">
+              <label class="veef-checkbox-option" data-ht-checkbox-option>
+                <input type="checkbox" name="additional" value="own-brand" data-ht-input="own-brand">
+                <div class="veef-checkbox-option__content">
+                  <div class="veef-checkbox-option__label">I sell under my own brand</div>
+                  <div class="veef-checkbox-option__desc">Products carry your brand name or trademark</div>
+                </div>
+              </label>
+              <label class="veef-checkbox-option" data-ht-checkbox-option>
+                <input type="checkbox" name="additional" value="outside-france" data-ht-input="outside-france">
+                <div class="veef-checkbox-option__content">
+                  <div class="veef-checkbox-option__label">I am established outside France</div>
+                  <div class="veef-checkbox-option__desc">Your company is not registered in France</div>
+                </div>
+              </label>
+              <label class="veef-checkbox-option" data-ht-checkbox-option>
+                <input type="checkbox" name="additional" value="marketplace" data-ht-input="marketplace">
+                <div class="veef-checkbox-option__content">
+                  <div class="veef-checkbox-option__label">I sell through online marketplaces</div>
+                  <div class="veef-checkbox-option__desc">Amazon, eBay, Cdiscount, or similar platforms</div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="veef-tool-submit" data-ht-submit-section style="display: none;">
+            <button type="button" class="veef-tool-submit__btn" data-ht-submit-btn>
+              Check my situation
+              <svg class="veef-tool-submit__btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Results Section -->
+          <div class="veef-results" data-ht-results>
+            <div class="veef-results__header">
+              <svg class="veef-results__icon veef-results__icon--success" data-ht-results-icon-success viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M9 12l2 2 4-4"/>
+              </svg>
+              <svg class="veef-results__icon veef-results__icon--warning" data-ht-results-icon-warning style="display: none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 8v4M12 16h.01"/>
+              </svg>
+              <h3 class="veef-results__title" data-ht-results-title>Possible French EPR categories to consider</h3>
+              <p class="veef-results__subtitle" data-ht-results-subtitle>Based on your answers, you may need to register for the following EPR streams:</p>
+            </div>
+
+            <!-- Result Badges -->
+            <div class="veef-results__badges" data-ht-results-badges>
+              <!-- Badges will be inserted here by JavaScript -->
+            </div>
+
+            <!-- No Match Message -->
+            <div class="veef-results__no-match" data-ht-no-match style="display: none;">
+              <svg class="veef-results__no-match-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 8v4M12 16h.01"/>
+              </svg>
+              <h4 class="veef-results__no-match-title">No obvious EPR categories detected</h4>
+              <p class="veef-results__no-match-text">Based on your answers, no obvious French EPR categories were detected. However, edge cases are common. We recommend a short review call if you are unsure.</p>
+            </div>
+
+            <p class="veef-results__disclaimer" data-ht-results-disclaimer>This result is indicative only. Final obligations depend on your exact role in the supply chain, contractual arrangements, and volumes placed on the French market.</p>
+
+            <!-- CTA Box -->
+            <div class="veef-cta-box">
+              <h4 class="veef-cta-box__title">Want a precise answer?</h4>
+              <p class="veef-cta-box__text">French EPR rules can be complex, especially for cross-border e-commerce and brand owners. We can review your situation and confirm your obligations.</p>
+              <a href="../contact.html?topic=epr-review" class="veef-cta-box__btn">
+                Request an EPR review
+                <svg class="veef-cta-box__btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Page Disclaimer -->
+        <div class="veef-page-disclaimer">
+          <p class="veef-page-disclaimer__text">This tool is for general information only and does not constitute legal or tax advice. French EPR obligations depend on detailed facts and should be confirmed case by case. For a formal assessment, please contact us.</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="veef-footer">
+      <div class="veef-container">
+        <div class="veef-footer__main">
+          <div class="veef-footer__brand">
+            <a href="../index.html" class="veef-footer__logo">
+              <img src="../assets/images/logo-black-no-background.svg" alt="VAT EPR EXPERT FRANCE" class="veef-footer__logo-img">
+            </a>
+            <p class="veef-footer__desc">French firm dedicated to VAT and EPR compliance for cross-border e-commerce sellers and their advisors.</p>
+            <div class="veef-footer__newsletter">
+              <p class="veef-footer__newsletter-desc">Get the latest insights on French VAT and EPR compliance delivered to your inbox.</p>
+              <form class="veef-footer__newsletter-form">
+                <input type="email" placeholder="Enter your email" class="veef-footer__newsletter-input">
+                <button type="submit" class="veef-footer__newsletter-btn">Subscribe</button>
+              </form>
+            </div>
+          </div>
+          <div class="veef-footer__grids">
+            <div class="veef-footer__grid">
+              <div class="veef-footer__column">
+                <h4 class="veef-footer__title">VAT Services</h4>
+                <ul class="veef-footer__list">
+                  <li class="veef-footer__item"><a href="../vat-representation.html" class="veef-footer__link">VAT services overview</a></li>
+                  <li class="veef-footer__item"><a href="../vat-representation.html#fiscal-representation" class="veef-footer__link">Fiscal representation</a></li>
+                  <li class="veef-footer__item"><a href="#" class="veef-footer__link">VAT registration</a></li>
+                  <li class="veef-footer__item"><a href="#" class="veef-footer__link">OSS / IOSS</a></li>
+                  <li class="veef-footer__item"><a href="#" class="veef-footer__link">VAT reporting</a></li>
+                  <li class="veef-footer__item"><a href="#" class="veef-footer__link">VAT audit support</a></li>
+                </ul>
+              </div>
+
+              <div class="veef-footer__column">
+                <h4 class="veef-footer__title">EPR Services</h4>
+                <ul class="veef-footer__list">
+                  <li class="veef-footer__item"><a href="../epr-representation.html" class="veef-footer__link">EPR services overview</a></li>
+                  <li class="veef-footer__item"><a href="../epr-representation.html#authorised-representation" class="veef-footer__link">Authorised representation</a></li>
+                  <li class="veef-footer__item"><a href="#" class="veef-footer__link">Producer registration</a></li>
+                  <li class="veef-footer__item"><a href="#" class="veef-footer__link">Declarations & reporting</a></li>
+                  <li class="veef-footer__item"><a href="#" class="veef-footer__link">UIN deregistration</a></li>
+                </ul>
+              </div>
+
+              <div class="veef-footer__column">
+                <h4 class="veef-footer__title">Tools</h4>
+                <ul class="veef-footer__list">
+                  <li class="veef-footer__item"><a href="#" class="veef-footer__link">VAT Checker</a></li>
+                  <li class="veef-footer__item"><a href="#" class="veef-footer__link">UIN Checker</a></li>
+                  <li class="veef-footer__item"><a href="epr-eligibility-checker.html" class="veef-footer__link">EPR Eligibility Checker</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="veef-footer__grid veef-footer__grid--secondary">
+              <div class="veef-footer__column">
+                <h4 class="veef-footer__title">Resources</h4>
+                <ul class="veef-footer__list">
+                  <li class="veef-footer__item"><a href="../blog/index.html" class="veef-footer__link">Blog</a></li>
+                  <li class="veef-footer__item"><a href="../faq.html" class="veef-footer__link">FAQ</a></li>
+                  <li class="veef-footer__item"><a href="../contact.html" class="veef-footer__link">Contact</a></li>
+                </ul>
+              </div>
+
+              <div class="veef-footer__column">
+                <h4 class="veef-footer__title">Company</h4>
+                <ul class="veef-footer__list">
+                  <li class="veef-footer__item"><a href="../index.html#founder" class="veef-footer__link">About</a></li>
+                  <li class="veef-footer__item"><a href="#" class="veef-footer__link">Legal notices</a></li>
+                  <li class="veef-footer__item"><a href="#" class="veef-footer__link">Privacy policy</a></li>
+                  <li class="veef-footer__item"><a href="#" class="veef-footer__link">Terms and conditions</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="veef-footer__top">
+          <div class="veef-footer__newsletter">
+            <p class="veef-footer__newsletter-desc">Get the latest insights on French VAT and EPR compliance delivered to your inbox.</p>
+            <form class="veef-footer__newsletter-form" data-ht-newsletter-form>
+              <input type="email" class="veef-footer__newsletter-input" placeholder="Your email address" required>
+              <button type="submit" class="veef-footer__newsletter-btn">Subscribe</button>
+            </form>
+            <p class="veef-footer__newsletter-note">By subscribing, you agree to our Privacy Policy.</p>
+          </div>
+        </div>
+
+        <div class="veef-footer__bottom">
+          <p class="veef-footer__copyright">&copy; 2025 VAT EPR EXPERT FRANCE. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script data-ht-main-script>
+    // EPR Eligibility Checker Logic
+    const eprCategories = {
+      empap: {
+        name: 'Packaging & Paper',
+        code: 'EMPAP',
+        link: '../epr-representation.html#packaging-paper'
+      },
+      weee: {
+        name: 'Electrical & Electronic Equipment',
+        code: 'WEEE',
+        link: '../epr-representation.html#weee'
+      },
+      bat: {
+        name: 'Batteries',
+        code: 'BAT',
+        link: '../epr-representation.html#batteries'
+      },
+      tlc: {
+        name: 'Textiles',
+        code: 'TLC',
+        link: '../epr-representation.html#textiles'
+      },
+      ea: {
+        name: 'Furniture',
+        code: 'EA',
+        link: '../epr-representation.html#furniture'
+      }
+    };
+
+    // DOM Elements
+    const placesOnMarketRadios = document.querySelectorAll('[data-ht-input="places-on-market"]');
+    const productsSection = document.querySelector('[data-ht-section="products"]');
+    const additionalSection = document.querySelector('[data-ht-section="additional"]');
+    const submitSection = document.querySelector('[data-ht-submit-section]');
+    const notApplicableMessage = document.querySelector('[data-ht-not-applicable]');
+    const submitBtn = document.querySelector('[data-ht-submit-btn]');
+    const resultsSection = document.querySelector('[data-ht-results]');
+    const resultsBadges = document.querySelector('[data-ht-results-badges]');
+    const noMatchMessage = document.querySelector('[data-ht-no-match]');
+    const resultsIconSuccess = document.querySelector('[data-ht-results-icon-success]');
+    const resultsIconWarning = document.querySelector('[data-ht-results-icon-warning]');
+    const resultsTitle = document.querySelector('[data-ht-results-title]');
+    const resultsSubtitle = document.querySelector('[data-ht-results-subtitle]');
+    const resultsDisclaimer = document.querySelector('[data-ht-results-disclaimer]');
+
+    // Handle "places on market" radio change
+    placesOnMarketRadios.forEach((radio) => {
+      radio.addEventListener('change', (e) => {
+        const value = e.target.value;
+        
+        if (value === 'yes') {
+          productsSection.style.display = 'block';
+          additionalSection.style.display = 'block';
+          submitSection.style.display = 'block';
+          notApplicableMessage.classList.remove('is-visible');
+          resultsSection.classList.remove('is-visible');
+        } else {
+          productsSection.style.display = 'none';
+          additionalSection.style.display = 'none';
+          submitSection.style.display = 'none';
+          notApplicableMessage.classList.add('is-visible');
+          resultsSection.classList.remove('is-visible');
+        }
+      });
+    });
+
+    // Handle checkbox styling
+    document.querySelectorAll('[data-ht-checkbox-option]').forEach((option) => {
+      const checkbox = option.querySelector('input[type="checkbox"]');
+      checkbox.addEventListener('change', () => {
+        if (checkbox.checked) {
+          option.classList.add('is-checked');
+        } else {
+          option.classList.remove('is-checked');
+        }
+      });
+    });
+
+    // Handle submit button
+    submitBtn.addEventListener('click', () => {
+      // Get selected EPR categories
+      const selectedCategories = [];
+      document.querySelectorAll('[data-ht-epr-category]').forEach((checkbox) => {
+        if (checkbox.checked) {
+          selectedCategories.push(checkbox.value);
+        }
+      });
+
+      // Clear previous results
+      resultsBadges.innerHTML = '';
+
+      if (selectedCategories.length === 0) {
+        // No categories selected
+        noMatchMessage.style.display = 'block';
+        resultsIconSuccess.style.display = 'none';
+        resultsIconWarning.style.display = 'block';
+        resultsTitle.textContent = 'No obvious EPR categories detected';
+        resultsSubtitle.textContent = 'However, edge cases are common. We recommend a short review if you are unsure.';
+        resultsDisclaimer.style.display = 'none';
+      } else {
+        // Categories selected - show badges
+        noMatchMessage.style.display = 'none';
+        resultsIconSuccess.style.display = 'block';
+        resultsIconWarning.style.display = 'none';
+        resultsTitle.textContent = 'Possible French EPR categories to consider';
+        resultsSubtitle.textContent = 'Based on your answers, you may need to register for the following EPR streams:';
+        resultsDisclaimer.style.display = 'block';
+
+        selectedCategories.forEach((categoryKey) => {
+          const category = eprCategories[categoryKey];
+          const badge = document.createElement('a');
+          badge.href = category.link;
+          badge.className = 'veef-results__badge';
+          badge.innerHTML = `
+            <svg class="veef-results__badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 12l2 2 4-4"/>
+              <circle cx="12" cy="12" r="10"/>
+            </svg>
+            ${category.name} (${category.code})
+          `;
+          resultsBadges.appendChild(badge);
+        });
+      }
+
+      // Show results section
+      resultsSection.classList.add('is-visible');
+
+      // Scroll to results
+      resultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    // Mobile menu toggle
+    const mobileToggle = document.querySelector('[data-ht-mobile-toggle]');
+    const mobileMenu = document.querySelector('[data-ht-mobile-menu]');
+
+    if (mobileToggle && mobileMenu) {
+      mobileToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('is-active');
+      });
+    }
+
+    // Mobile accordion
+    document.querySelectorAll('[data-ht-accordion-trigger]').forEach((trigger) => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.closest('[data-ht-accordion]');
+        accordion.classList.toggle('is-open');
+      });
+    });
+  </script>
+</body>
+</html>
+

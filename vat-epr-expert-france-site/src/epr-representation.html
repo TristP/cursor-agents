@@ -84,16 +84,24 @@
     .veef-logo {
       display: flex;
       align-items: center;
-      font-size: 1.125rem;
-      font-weight: 700;
-      color: #1E3A8A;
-      letter-spacing: -0.025em;
     }
 
-    .veef-logo__icon {
-      width: 32px;
-      height: 32px;
-      margin-right: 10px;
+    .veef-logo__text {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #111827;
+      letter-spacing: -0.02em;
+    }
+
+    .veef-logo__dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: #10B981;
+      border-radius: 50%;
+      margin-left: 4px;
+      align-self: flex-end;
+      margin-bottom: 4px;
     }
 
     .veef-nav {
@@ -253,15 +261,15 @@
       position: absolute;
       top: 100%;
       left: 0;
-      min-width: 220px;
+      min-width: 320px;
       background-color: #ffffff;
       border-width: 1px;
       border-style: solid;
       border-color: #E5E7EB;
-      border-radius: 8px;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-      padding-top: 8px;
-      padding-bottom: 8px;
+      border-radius: 12px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+      padding-top: 16px;
+      padding-bottom: 16px;
       opacity: 0;
       visibility: hidden;
       transform: translateY(8px);
@@ -271,19 +279,48 @@
       z-index: 100;
     }
 
+    .veef-nav__dropdown--mega .veef-nav__dropdown-menu {
+      min-width: 380px;
+    }
+
     .veef-nav__dropdown:hover .veef-nav__dropdown-menu {
       opacity: 1;
       visibility: visible;
       transform: translateY(0);
     }
 
-    .veef-nav__dropdown-item {
-      display: block;
-      padding-top: 10px;
-      padding-bottom: 10px;
+    .veef-nav__dropdown-group {
+      padding-bottom: 12px;
+      margin-bottom: 12px;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-bottom-color: #F3F4F6;
+    }
+
+    .veef-nav__dropdown-group:last-child {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom-width: 0;
+    }
+
+    .veef-nav__dropdown-group-title {
+      font-size: 0.6875rem;
+      font-weight: 600;
+      color: #9CA3AF;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
       padding-left: 16px;
       padding-right: 16px;
-      font-size: 0.9375rem;
+      padding-bottom: 8px;
+    }
+
+    .veef-nav__dropdown-item {
+      display: block;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 16px;
+      padding-right: 16px;
+      font-size: 0.875rem;
       font-weight: 500;
       color: #374151;
       transition-property: color, background-color;
@@ -956,11 +993,47 @@
       margin-top: 12px;
     }
 
+    .veef-footer__column--newsletter .veef-footer__newsletter {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .veef-footer__column--newsletter .veef-footer__newsletter-desc {
+      font-size: 0.875rem;
+      margin-bottom: 12px;
+    }
+
+    .veef-footer__column--newsletter .veef-footer__newsletter-form {
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .veef-footer__column--newsletter .veef-footer__newsletter-input {
+      font-size: 0.875rem;
+      padding: 10px 12px;
+    }
+
+    .veef-footer__column--newsletter .veef-footer__newsletter-btn {
+      font-size: 0.875rem;
+      padding: 10px 16px;
+    }
+
     .veef-footer__grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 1fr;
       gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    .veef-footer__grid--secondary {
+      justify-content: flex-end;
+      margin-bottom: 0;
+    }
+
+    .veef-footer__grids {
+      flex-grow: 1;
     }
 
     .veef-footer__column {
@@ -1168,12 +1241,21 @@
         max-width: 380px;
       }
 
-      .veef-footer__grid {
+      .veef-footer__grids {
         flex-shrink: 0;
+      }
+
+      .veef-footer__grid {
         display: grid;
-        grid-template-columns: repeat(4, auto);
-        gap: 72px;
+        grid-template-columns: repeat(3, auto);
+        gap: 48px;
+        margin-bottom: 24px;
+      }
+
+      .veef-footer__grid--secondary {
+        grid-template-columns: repeat(2, auto);
         margin-left: auto;
+        margin-bottom: 0;
       }
     }
 
@@ -1246,17 +1328,68 @@
       <div class="veef-container">
         <div class="veef-header__inner">
           <a href="index.html" class="veef-logo">
-            <svg class="veef-logo__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="32" height="32" rx="6" fill="#1E3A8A"/>
-              <path d="M8 10L12 22L16 14L20 22L24 10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
             <span class="veef-logo__text">VAT EPR EXPERT FRANCE</span>
           </a>
           
           <nav class="veef-nav" data-ht-nav>
             <ul class="veef-nav__list">
-              <li class="veef-nav__item"><a href="vat-representation.html" class="veef-nav__link">VAT Representation</a></li>
-              <li class="veef-nav__item"><a href="epr-representation.html" class="veef-nav__link veef-nav__link--active">EPR Representation</a></li>
+              <!-- VAT Services Dropdown -->
+              <li class="veef-nav__item veef-nav__dropdown veef-nav__dropdown--mega">
+                <a href="vat-representation.html" class="veef-nav__dropdown-trigger">
+                  VAT services
+                  <svg class="veef-nav__dropdown-icon" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 4.5l3 3 3-3"/>
+                  </svg>
+                </a>
+                <div class="veef-nav__dropdown-menu">
+                  <div class="veef-nav__dropdown-group">
+                    <div class="veef-nav__dropdown-group-title">Overview & Mandate</div>
+                    <a href="vat-representation.html#fiscal-representation" class="veef-nav__dropdown-item">Fiscal representation in France</a>
+                  </div>
+                  <div class="veef-nav__dropdown-group">
+                    <div class="veef-nav__dropdown-group-title">Registrations & De-registrations</div>
+                    <a href="#" class="veef-nav__dropdown-item">EORI registration</a>
+                    <a href="#" class="veef-nav__dropdown-item">French VAT registration</a>
+                    <a href="#" class="veef-nav__dropdown-item">OSS / IOSS registration</a>
+                    <a href="#" class="veef-nav__dropdown-item">VAT deregistration</a>
+                  </div>
+                  <div class="veef-nav__dropdown-group">
+                    <div class="veef-nav__dropdown-group-title">Ongoing Compliance</div>
+                    <a href="#" class="veef-nav__dropdown-item">VAT reporting (CA3)</a>
+                    <a href="#" class="veef-nav__dropdown-item">OSS / IOSS reporting</a>
+                    <a href="#" class="veef-nav__dropdown-item">ERTVA reporting</a>
+                    <a href="#" class="veef-nav__dropdown-item">VAT audit support</a>
+                  </div>
+                </div>
+              </li>
+
+              <!-- EPR Services Dropdown -->
+              <li class="veef-nav__item veef-nav__dropdown veef-nav__dropdown--mega">
+                <a href="epr-representation.html" class="veef-nav__dropdown-trigger">
+                  EPR services
+                  <svg class="veef-nav__dropdown-icon" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 4.5l3 3 3-3"/>
+                  </svg>
+                </a>
+                <div class="veef-nav__dropdown-menu">
+                  <div class="veef-nav__dropdown-group">
+                    <div class="veef-nav__dropdown-group-title">Overview & Mandate</div>
+                    <a href="epr-representation.html#authorised-representation" class="veef-nav__dropdown-item">Authorised representation in France</a>
+                  </div>
+                  <div class="veef-nav__dropdown-group">
+                    <div class="veef-nav__dropdown-group-title">Registrations & Deregistrations</div>
+                    <a href="#" class="veef-nav__dropdown-item">Producer registration & UIN management</a>
+                    <a href="#" class="veef-nav__dropdown-item">UIN deregistration</a>
+                    <a href="#" class="veef-nav__dropdown-item">Eco-organism & agent transfer</a>
+                  </div>
+                  <div class="veef-nav__dropdown-group">
+                    <div class="veef-nav__dropdown-group-title">Ongoing Compliance</div>
+                    <a href="#" class="veef-nav__dropdown-item">Declarations & reporting</a>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Tools Dropdown -->
               <li class="veef-nav__item veef-nav__dropdown">
                 <span class="veef-nav__dropdown-trigger">
                   Tools
@@ -1275,8 +1408,13 @@
                     <span class="veef-nav__dropdown-badge">Coming soon</span>
                     <span class="veef-nav__dropdown-desc">Look up EPR identification numbers</span>
                   </a>
+                  <a href="tools/epr-eligibility-checker.html" class="veef-nav__dropdown-item">
+                    EPR Eligibility Checker
+                    <span class="veef-nav__dropdown-desc">Find out which EPR categories apply</span>
+                  </a>
                 </div>
               </li>
+
               <li class="veef-nav__item"><a href="blog/index.html" class="veef-nav__link">Blog</a></li>
               <li class="veef-nav__item"><a href="faq.html" class="veef-nav__link">FAQ</a></li>
               <li class="veef-nav__item"><a href="contact.html" class="veef-nav__cta">Contact us</a></li>
@@ -1292,12 +1430,65 @@
         </div>
 
         <nav class="veef-mobile-menu" data-ht-mobile-menu>
+          <!-- VAT Services Accordion -->
+          <div class="veef-mobile-menu__accordion" data-ht-accordion>
+            <button class="veef-mobile-menu__accordion-trigger" data-ht-accordion-trigger>
+              VAT services
+              <svg class="veef-mobile-menu__accordion-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 6l4 4 4-4"/>
+              </svg>
+            </button>
+            <div class="veef-mobile-menu__accordion-content">
+              <div class="veef-mobile-menu__accordion-group">
+                <div class="veef-mobile-menu__accordion-group-title">Overview & Mandate</div>
+                <a href="vat-representation.html#fiscal-representation" class="veef-mobile-menu__accordion-link">Fiscal representation in France</a>
+              </div>
+              <div class="veef-mobile-menu__accordion-group">
+                <div class="veef-mobile-menu__accordion-group-title">Registrations</div>
+                <a href="#" class="veef-mobile-menu__accordion-link">EORI registration</a>
+                <a href="#" class="veef-mobile-menu__accordion-link">French VAT registration</a>
+                <a href="#" class="veef-mobile-menu__accordion-link">OSS / IOSS registration</a>
+                <a href="#" class="veef-mobile-menu__accordion-link">VAT deregistration</a>
+              </div>
+              <div class="veef-mobile-menu__accordion-group">
+                <div class="veef-mobile-menu__accordion-group-title">Ongoing Compliance</div>
+                <a href="#" class="veef-mobile-menu__accordion-link">VAT reporting (CA3)</a>
+                <a href="#" class="veef-mobile-menu__accordion-link">OSS / IOSS reporting</a>
+                <a href="#" class="veef-mobile-menu__accordion-link">ERTVA reporting</a>
+                <a href="#" class="veef-mobile-menu__accordion-link">VAT audit support</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- EPR Services Accordion -->
+          <div class="veef-mobile-menu__accordion" data-ht-accordion>
+            <button class="veef-mobile-menu__accordion-trigger" data-ht-accordion-trigger>
+              EPR services
+              <svg class="veef-mobile-menu__accordion-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 6l4 4 4-4"/>
+              </svg>
+            </button>
+            <div class="veef-mobile-menu__accordion-content">
+              <div class="veef-mobile-menu__accordion-group">
+                <div class="veef-mobile-menu__accordion-group-title">Overview & Mandate</div>
+                <a href="epr-representation.html#authorised-representation" class="veef-mobile-menu__accordion-link">Authorised representation in France</a>
+              </div>
+              <div class="veef-mobile-menu__accordion-group">
+                <div class="veef-mobile-menu__accordion-group-title">Registrations & Deregistrations</div>
+                <a href="#" class="veef-mobile-menu__accordion-link">Producer registration & UIN</a>
+                <a href="#" class="veef-mobile-menu__accordion-link">UIN deregistration</a>
+                <a href="#" class="veef-mobile-menu__accordion-link">Eco-organism & agent transfer</a>
+              </div>
+              <div class="veef-mobile-menu__accordion-group">
+                <div class="veef-mobile-menu__accordion-group-title">Ongoing Compliance</div>
+                <a href="#" class="veef-mobile-menu__accordion-link">Declarations & reporting</a>
+              </div>
+            </div>
+          </div>
+
           <ul class="veef-mobile-menu__list">
-            <li class="veef-mobile-menu__item"><a href="index.html" class="veef-mobile-menu__link">Home</a></li>
-            <li class="veef-mobile-menu__item"><a href="vat-representation.html" class="veef-mobile-menu__link">VAT Representation</a></li>
-            <li class="veef-mobile-menu__item"><a href="epr-representation.html" class="veef-mobile-menu__link">EPR Representation</a></li>
-            <li class="veef-mobile-menu__item"><a href="faq.html" class="veef-mobile-menu__link">FAQ</a></li>
             <li class="veef-mobile-menu__item"><a href="blog/index.html" class="veef-mobile-menu__link">Blog</a></li>
+            <li class="veef-mobile-menu__item"><a href="faq.html" class="veef-mobile-menu__link">FAQ</a></li>
           </ul>
           <a href="contact.html" class="veef-mobile-menu__cta">Contact us</a>
           <a href="#" class="veef-mobile-menu__login">Login</a>
@@ -1644,40 +1835,60 @@
             <p class="veef-footer__desc">French firm dedicated to VAT and EPR compliance for cross-border e-commerce sellers and their advisors.</p>
           </div>
 
-          <div class="veef-footer__grid">
-            <div class="veef-footer__column">
-              <h4 class="veef-footer__title">Services</h4>
-              <ul class="veef-footer__list">
-                <li class="veef-footer__item"><a href="vat-representation.html" class="veef-footer__link">VAT representation</a></li>
-                <li class="veef-footer__item"><a href="epr-representation.html" class="veef-footer__link">EPR representation</a></li>
-              </ul>
+          <div class="veef-footer__grids">
+            <div class="veef-footer__grid">
+              <div class="veef-footer__column">
+                <h4 class="veef-footer__title">VAT Services</h4>
+                <ul class="veef-footer__list">
+                  <li class="veef-footer__item"><a href="vat-representation.html" class="veef-footer__link">VAT services overview</a></li>
+                  <li class="veef-footer__item"><a href="vat-representation.html#fiscal-representation" class="veef-footer__link">Fiscal representation</a></li>
+                  <li class="veef-footer__item"><a href="#" class="veef-footer__link">VAT registration</a></li>
+                  <li class="veef-footer__item"><a href="#" class="veef-footer__link">OSS / IOSS</a></li>
+                  <li class="veef-footer__item"><a href="#" class="veef-footer__link">VAT reporting</a></li>
+                  <li class="veef-footer__item"><a href="#" class="veef-footer__link">VAT audit support</a></li>
+                </ul>
+              </div>
+
+              <div class="veef-footer__column">
+                <h4 class="veef-footer__title">EPR Services</h4>
+                <ul class="veef-footer__list">
+                  <li class="veef-footer__item"><a href="epr-representation.html" class="veef-footer__link">EPR services overview</a></li>
+                  <li class="veef-footer__item"><a href="epr-representation.html#authorised-representation" class="veef-footer__link">Authorised representation</a></li>
+                  <li class="veef-footer__item"><a href="#" class="veef-footer__link">Producer registration</a></li>
+                  <li class="veef-footer__item"><a href="#" class="veef-footer__link">Declarations & reporting</a></li>
+                  <li class="veef-footer__item"><a href="#" class="veef-footer__link">UIN deregistration</a></li>
+                </ul>
+              </div>
+
+              <div class="veef-footer__column">
+                <h4 class="veef-footer__title">Tools</h4>
+                <ul class="veef-footer__list">
+                  <li class="veef-footer__item"><a href="#" class="veef-footer__link">VAT Checker</a></li>
+                  <li class="veef-footer__item"><a href="#" class="veef-footer__link">UIN Checker</a></li>
+                  <li class="veef-footer__item"><a href="tools/epr-eligibility-checker.html" class="veef-footer__link">EPR Eligibility Checker</a></li>
+                </ul>
+              </div>
             </div>
 
-            <div class="veef-footer__column">
-              <h4 class="veef-footer__title">Tools</h4>
-              <ul class="veef-footer__list">
-                <li class="veef-footer__item"><a href="#" class="veef-footer__link">VAT Checker</a></li>
-                <li class="veef-footer__item"><a href="#" class="veef-footer__link">UIN Checker</a></li>
-              </ul>
-            </div>
+            <div class="veef-footer__grid veef-footer__grid--secondary">
+              <div class="veef-footer__column">
+                <h4 class="veef-footer__title">Resources</h4>
+                <ul class="veef-footer__list">
+                  <li class="veef-footer__item"><a href="blog/index.html" class="veef-footer__link">Blog</a></li>
+                  <li class="veef-footer__item"><a href="faq.html" class="veef-footer__link">FAQ</a></li>
+                  <li class="veef-footer__item"><a href="contact.html" class="veef-footer__link">Contact</a></li>
+                </ul>
+              </div>
 
-            <div class="veef-footer__column">
-              <h4 class="veef-footer__title">Resources</h4>
-              <ul class="veef-footer__list">
-                <li class="veef-footer__item"><a href="blog/index.html" class="veef-footer__link">Blog</a></li>
-                <li class="veef-footer__item"><a href="faq.html" class="veef-footer__link">FAQ</a></li>
-                <li class="veef-footer__item"><a href="contact.html" class="veef-footer__link">Contact</a></li>
-              </ul>
-            </div>
-
-            <div class="veef-footer__column">
-              <h4 class="veef-footer__title">Company</h4>
-              <ul class="veef-footer__list">
-                <li class="veef-footer__item"><a href="index.html#founder" class="veef-footer__link">About</a></li>
-                <li class="veef-footer__item"><a href="#" class="veef-footer__link">Legal notices</a></li>
-                <li class="veef-footer__item"><a href="#" class="veef-footer__link">Privacy policy</a></li>
-                <li class="veef-footer__item"><a href="#" class="veef-footer__link">Terms and conditions</a></li>
-              </ul>
+              <div class="veef-footer__column">
+                <h4 class="veef-footer__title">Company</h4>
+                <ul class="veef-footer__list">
+                  <li class="veef-footer__item"><a href="index.html#founder" class="veef-footer__link">About</a></li>
+                  <li class="veef-footer__item"><a href="#" class="veef-footer__link">Legal notices</a></li>
+                  <li class="veef-footer__item"><a href="#" class="veef-footer__link">Privacy policy</a></li>
+                  <li class="veef-footer__item"><a href="#" class="veef-footer__link">Terms and conditions</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
