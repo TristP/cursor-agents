@@ -868,6 +868,35 @@
       margin-bottom: 24px;
     }
 
+    .veef-footer__social {
+      display: flex;
+      gap: 12px;
+    }
+
+    .veef-footer__social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background-color: #1F2937;
+      border-radius: 8px;
+      color: #9CA3AF;
+      transition-property: background-color, color;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+    }
+
+    .veef-footer__social-link:hover {
+      background-color: #1E3A8A;
+      color: #ffffff;
+    }
+
+    .veef-footer__social-icon {
+      width: 20px;
+      height: 20px;
+    }
+
     .veef-footer__newsletter {
       width: 100%;
       max-width: 100%;
@@ -925,8 +954,68 @@
       border-color: #1E3A8A;
     }
 
+    .veef-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      padding-left: 28px;
+      padding-right: 28px;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 8px;
+      transition-property: all;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+      cursor: pointer;
+      border-width: 0;
+      border-style: none;
+    }
+
+    .veef-button--primary {
+      background-color: #1E3A8A;
+      color: #ffffff;
+      box-shadow: 0 4px 14px -3px rgba(30, 58, 138, 0.4);
+    }
+
+    .veef-button--primary:hover {
+      background-color: #1e40af;
+      box-shadow: 0 6px 20px -3px rgba(30, 58, 138, 0.5);
+      transform: translateY(-2px);
+    }
+
+    .veef-button--secondary {
+      background-color: #ffffff;
+      color: #1E3A8A;
+      border-width: 2px;
+      border-style: solid;
+      border-color: #1E3A8A;
+    }
+
+    .veef-button--secondary:hover {
+      background-color: #EFF6FF;
+    }
+
+    .veef-button__icon {
+      width: 20px;
+      height: 20px;
+      margin-left: 8px;
+    }
+
     .veef-footer__newsletter-form .veef-button {
       flex: 0 0 auto;
+      background-color: #2563EB;
+      border-radius: 8px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 24px;
+      padding-right: 24px;
+      box-shadow: none;
+    }
+
+    .veef-footer__newsletter-form .veef-button:hover {
+      background-color: #1d4ed8;
     }
 
     .veef-footer__newsletter-note {
@@ -936,7 +1025,7 @@
     }
 
     .veef-footer__title {
-      font-size: 1.125rem;
+      font-size: 1.05rem;
       font-weight: 600;
       color: #ffffff;
       margin-bottom: 16px;
@@ -949,7 +1038,7 @@
     }
 
     .veef-footer__link {
-      font-size: 0.9375rem;
+      font-size: 0.85rem;
       color: #D1D5DB;
       transition-property: color;
       transition-duration: 0.2s;
@@ -961,7 +1050,7 @@
     }
 
     .veef-footer__bottom {
-      padding-top: 8px;
+      padding-top: 24px;
     }
 
     .veef-footer__copyright {
@@ -970,47 +1059,27 @@
       text-align: left;
     }
 
-    @media (min-width: 768px) {
-      .veef-footer__top {
-        grid-template-columns: minmax(260px, 360px) 1fr;
-        grid-template-rows: 1fr;
-        gap: 32px;
-      }
-
-      .veef-footer__columns {
-        grid-template-columns: repeat(3, auto);
-        gap: 16px;
-      }
+    .veef-footer__bottom-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
     }
 
-    @media (min-width: 1024px) {
-      .veef-footer__top {
-        grid-template-columns: minmax(320px, 460px) 1fr;
-        grid-template-rows: 1fr;
-        gap: 48px;
-      }
-
-      .veef-footer__columns {
-        grid-template-columns: repeat(5, auto);
-        gap: 18px;
-        margin-left: auto;
-        justify-content: end;
-      }
-
-      .veef-footer__newsletter-form {
-        flex-wrap: nowrap;
-      }
-
-      .veef-footer__newsletter-input {
-        flex: 1 1 auto;
-      }
+    .veef-footer__bottom-link {
+      font-size: 0.8125rem;
+      color: #6B7280;
+      transition-property: color;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
     }
 
-    @media (max-width: 767px) {
-      .veef-footer__columns {
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
+    .veef-footer__bottom-link:hover {
+      color: #ffffff;
+    }
+
+    .veef-footer__bottom-separator {
+      color: #4B5563;
     }
 
     /* Back to Top Button */
@@ -1124,60 +1193,21 @@
         grid-template-columns: 1fr 1fr;
       }
 
-      .veef-footer__main {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 48px;
-      }
-
-      .veef-footer__brand {
-        flex-shrink: 0;
-        max-width: 380px;
-      }
-
-      .veef-footer__grid {
-        flex-grow: 1;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr;
-        gap: 20px;
-      }
-
-      .veef-footer__newsletter-form {
-        flex-direction: row;
+      .veef-footer__top {
+        grid-template-columns: 1fr;
       }
     }
 
     @media (min-width: 768px) {
-      .veef-footer__main {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 24px;
+      .veef-footer__top {
+        grid-template-columns: minmax(260px, 360px) 1fr;
+        grid-template-rows: 1fr;
+        gap: 32px;
       }
 
-      .veef-footer__brand {
-        flex-shrink: 0;
-        max-width: 380px;
-      }
-
-      .veef-footer__grids {
-        flex-shrink: 0;
-      }
-
-      .veef-footer__grid {
-        display: grid;
+      .veef-footer__columns {
         grid-template-columns: repeat(3, auto);
-        gap: 48px;
-        margin-bottom: 24px;
-      }
-
-      .veef-footer__grid--secondary {
-        grid-template-columns: repeat(2, auto);
-        margin-left: auto;
-        margin-bottom: 0;
+        gap: 16px;
       }
     }
 
@@ -1198,6 +1228,27 @@
 
       .veef-contact__grid {
         grid-template-columns: 1.5fr 1fr;
+      }
+
+      .veef-footer__top {
+        grid-template-columns: minmax(320px, 460px) 1fr;
+        grid-template-rows: 1fr;
+        gap: 48px;
+      }
+
+      .veef-footer__columns {
+        grid-template-columns: repeat(5, auto);
+        gap: 18px;
+        margin-left: auto;
+        justify-content: end;
+      }
+
+      .veef-footer__newsletter-form {
+        flex-wrap: nowrap;
+      }
+
+      .veef-footer__newsletter-input {
+        flex: 1 1 auto;
       }
     }
 
@@ -1223,8 +1274,9 @@
         padding-right: 20px;
       }
 
-      .veef-footer__grid {
-        grid-template-columns: 1fr 1fr;
+      .veef-footer__columns {
+        grid-template-columns: 1fr;
+        gap: 20px;
       }
     }
 
@@ -1677,7 +1729,7 @@
             <div class="veef-footer__column">
               <h4 class="veef-footer__title">Company</h4>
               <ul class="veef-footer__list">
-                <li class="veef-footer__item"><a href="index.html#founder" class="veef-footer__link">About</a></li>
+                <li class="veef-footer__item"><a href="#founder" class="veef-footer__link">About</a></li>
                 <li class="veef-footer__item"><a href="#" class="veef-footer__link">Legal notices</a></li>
                 <li class="veef-footer__item"><a href="#" class="veef-footer__link">Privacy policy</a></li>
                 <li class="veef-footer__item"><a href="#" class="veef-footer__link">Terms and conditions</a></li>
